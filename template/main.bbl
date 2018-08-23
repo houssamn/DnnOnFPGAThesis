@@ -1,0 +1,1147 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{tensorflow}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=AM}{%
+         family={Abadi},
+         familyi={A\bibinitperiod},
+         given={Mart{\'\i}n},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Barham},
+         familyi={B\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jianmin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhifeng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Devin},
+         familyi={D\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghemawat},
+         familyi={G\bibinitperiod},
+         given={Sanjay},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Irving},
+         familyi={I\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Isard},
+         familyi={I\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMBPCJCZDADJDMGSIGIM+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{OSDI}
+    \field{pages}{265\bibrangedash 283}
+    \field{title}{Tensorflow: a system for large-scale machine learning.}
+    \field{volume}{16}
+    \field{year}{2016}
+  \endentry
+
+  \entry{ddl}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BNT}{%
+         family={Ben-Nun},
+         familyi={B\bibinitperiod-N\bibinitperiod},
+         given={Tal},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hoefler},
+         familyi={H\bibinitperiod},
+         given={Torsten},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNTHT1}
+    \strng{fullhash}{BNTHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Demystifying Parallel and Distributed Deep Learning: An
+  In-Depth Concurrency Analysis}
+    \field{journaltitle}{arXiv preprint arXiv:1802.09941}
+    \field{year}{2018}
+  \endentry
+
+  \entry{theano}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=BJ}{%
+         family={Bergstra},
+         familyi={B\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bastien},
+         familyi={B\bibinitperiod},
+         given={Fr{\'e}d{\'e}ric},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Breuleux},
+         familyi={B\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lamblin},
+         familyi={L\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Pascanu},
+         familyi={P\bibinitperiod},
+         given={Razvan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DO}{%
+         family={Delalleau},
+         familyi={D\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Desjardins},
+         familyi={D\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WFD}{%
+         family={Warde-Farley},
+         familyi={W\bibinitperiod-F\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bergeron},
+         familyi={B\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJBFBOLPPRDODGWFDGIBA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{NIPS 2011, BigLearning Workshop, Granada, Spain}
+    \field{pages}{1\bibrangedash 48}
+    \field{title}{Theano: Deep learning on gpus with python}
+    \field{volume}{3}
+    \field{year}{2011}
+  \endentry
+
+  \entry{compton2002reconfigurable}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CK}{%
+         family={Compton},
+         familyi={C\bibinitperiod},
+         given={Katherine},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hauck},
+         familyi={H\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{CKHS1}
+    \strng{fullhash}{CKHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{171\bibrangedash 210}
+    \field{title}{Reconfigurable computing: a survey of systems and software}
+    \field{volume}{34}
+    \field{journaltitle}{ACM Computing Surveys (csuR)}
+    \field{year}{2002}
+  \endentry
+
+  \entry{csaji2001approximation}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CBC}{%
+         family={Cs{\'a}ji},
+         familyi={C\bibinitperiod},
+         given={Bal{\'a}zs\bibnamedelima Csan{\'a}d},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{CBC1}
+    \strng{fullhash}{CBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{48}
+    \field{title}{Approximation with artificial neural networks}
+    \field{volume}{24}
+    \field{journaltitle}{Faculty of Sciences, Etvs Lornd University, Hungary}
+    \field{year}{2001}
+  \endentry
+
+  \entry{cuda}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CC}{%
+         family={Cuda},
+         familyi={C\bibinitperiod},
+         given={C},
+         giveni={C},
+      }}%
+    }
+    \strng{namehash}{CC1}
+    \strng{fullhash}{CC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Programming guide}
+    \field{year}{2012}
+  \endentry
+
+  \entry{dean2012large}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Monga},
+         familyi={M\bibinitperiod},
+         given={Rajat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Devin},
+         familyi={D\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Senior},
+         familyi={S\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tucker},
+         familyi={T\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=YK}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Ke},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJCGMRCKDMMMSATPYKLQV+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{1223\bibrangedash 1231}
+    \field{title}{Large scale distributed deep networks}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Gupta2008}{inbook}{}
+    \name{author}{2}{}{%
+      {{hash=GR}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Brewer},
+         familyi={B\bibinitperiod},
+         given={Forrest},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=CP}{%
+         family={Coussy},
+         familyi={C\bibinitperiod},
+         given={Philippe},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Morawiec},
+         familyi={M\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Netherlands}%
+    }
+    \strng{namehash}{GRBF1}
+    \strng{fullhash}{GRBF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    High-level Synthesis or HLS represented an ambitious attempt by the
+  community to provide capabilities for ``algorithms to gates'' for a period of
+  almost three decades. The technical challenge in realizing this goal drew
+  researchers from various areas ranging from parallel programming, digital
+  signal processing, and logic synthesis to expert systems. This article takes
+  a journey through the years of research in this domain with a narrative view
+  of the lessons learnt and their implication for future research. As with any
+  retrospective, it is written from a purely personal perspective of our
+  research efforts in the domain, though we have made a reasonable attempt to
+  document important technical developments in the history of high-level
+  synthesis.%
+    }
+    \field{booktitle}{High-Level Synthesis: From Algorithm to Digital Circuit}
+    \verb{doi}
+    \verb 10.1007/978-1-4020-8588-8_2
+    \endverb
+    \field{isbn}{978-1-4020-8588-8}
+    \field{pages}{13\bibrangedash 28}
+    \field{title}{High-Level Synthesis: A Retrospective}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-1-4020-8588-8_2
+    \endverb
+    \list{location}{1}{%
+      {Dordrecht}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{hubara2016binarized}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=HI}{%
+         family={Hubara},
+         familyi={H\bibinitperiod},
+         given={Itay},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EYR}{%
+         family={El-Yaniv},
+         familyi={E\bibinitperiod-Y\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HI+1}
+    \strng{fullhash}{HICMSDEYRBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{4107\bibrangedash 4115}
+    \field{title}{Binarized neural networks}
+    \field{year}{2016}
+  \endentry
+
+  \entry{densenet}{article}{}
+    \name{author}{6}{}{%
+      {{hash=IF}{%
+         family={Iandola},
+         familyi={I\bibinitperiod},
+         given={Forrest},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Moskewicz},
+         familyi={M\bibinitperiod},
+         given={Matt},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Karayev},
+         familyi={K\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Girshick},
+         familyi={G\bibinitperiod},
+         given={Ross},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Darrell},
+         familyi={D\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Keutzer},
+         familyi={K\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IF+1}
+    \strng{fullhash}{IFMMKSGRDTKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Densenet: Implementing efficient convnet descriptor pyramids}
+    \field{journaltitle}{arXiv preprint arXiv:1404.1869}
+    \field{year}{2014}
+  \endentry
+
+  \entry{intel2016sdk}{article}{}
+    \name{author}{1}{}{%
+      {{hash=IF}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+         given={FPGA},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IF1}
+    \strng{fullhash}{IF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{SDK for OpenCL}
+    \field{volume}{31}
+    \field{journaltitle}{Programming Guide. UG-OCL002}
+    \field{year}{2016}
+  \endentry
+
+  \entry{deepfpga}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LG}{%
+         family={Lacey},
+         familyi={L\bibinitperiod},
+         given={Griffin},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TGW}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Graham\bibnamedelima W},
+         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Areibi},
+         familyi={A\bibinitperiod},
+         given={Shawki},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LGTGWAS1}
+    \strng{fullhash}{LGTGWAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Deep learning on fpgas: Past, present, and future}
+    \field{journaltitle}{arXiv preprint arXiv:1602.04283}
+    \field{year}{2016}
+  \endentry
+
+  \entry{hlssurv}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MG}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Grant},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{MGSG1}
+    \strng{fullhash}{MGSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{4}
+    \field{pages}{18\bibrangedash 25}
+    \field{title}{High-level synthesis: Past, present, and future}
+    \field{volume}{26}
+    \field{journaltitle}{IEEE Design \& Test of Computers}
+    \field{year}{2009}
+  \endentry
+
+  \entry{mccarthy2006proposal}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MJ}{%
+         family={McCarthy},
+         familyi={M\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MML}{%
+         family={Minsky},
+         familyi={M\bibinitperiod},
+         given={Marvin\bibnamedelima L},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Rochester},
+         familyi={R\bibinitperiod},
+         given={Nathaniel},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SCE}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={Claude\bibnamedelima E},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ+1}
+    \strng{fullhash}{MJMMLRNSCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{4}
+    \field{pages}{12}
+    \field{title}{A proposal for the dartmouth summer research project on
+  artificial intelligence, august 31, 1955}
+    \field{volume}{27}
+    \field{journaltitle}{AI magazine}
+    \field{year}{2006}
+  \endentry
+
+  \entry{nurvitadhi2017can}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=NE}{%
+         family={Nurvitadhi},
+         familyi={N\bibinitperiod},
+         given={Eriko},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Venkatesh},
+         familyi={V\bibinitperiod},
+         given={Ganesh},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sim},
+         familyi={S\bibinitperiod},
+         given={Jaewoong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marr},
+         familyi={M\bibinitperiod},
+         given={Debbie},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Randy},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=OGHJ}{%
+         family={Ong Gee\bibnamedelima Hock},
+         familyi={O\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LYT}{%
+         family={Liew},
+         familyi={L\bibinitperiod},
+         given={Yeong\bibnamedelima Tat},
+         giveni={Y\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Srivatsan},
+         familyi={S\bibinitperiod},
+         given={Krishnan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Moss},
+         familyi={M\bibinitperiod},
+         given={Duncan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Subhaschandra},
+         familyi={S\bibinitperiod},
+         given={Suchit},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{NE+1}
+    \strng{fullhash}{NEVGSJMDHROGHJLYTSKMDSS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \field{pages}{5\bibrangedash 14}
+    \field{title}{Can fpgas beat gpus in accelerating next-generation deep
+  neural networks?}
+    \field{year}{2017}
+  \endentry
+
+  \entry{pao1989adaptive}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PY}{%
+         family={Pao},
+         familyi={P\bibinitperiod},
+         given={Yohhan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Reading, MA (US); Addison-Wesley Publishing Co., Inc.}%
+    }
+    \strng{namehash}{PY1}
+    \strng{fullhash}{PY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Adaptive pattern recognition and neural networks}
+    \field{year}{1989}
+  \endentry
+
+  \entry{raina2009large}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RR}{%
+         family={Raina},
+         familyi={R\bibinitperiod},
+         given={Rajat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Madhavan},
+         familyi={M\bibinitperiod},
+         given={Anand},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NAY}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Andrew\bibnamedelima Y},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{RRMANAY1}
+    \strng{fullhash}{RRMANAY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Proceedings of the 26th annual international conference
+  on machine learning}
+    \field{pages}{873\bibrangedash 880}
+    \field{title}{Large-scale deep unsupervised learning using graphics
+  processors}
+    \field{year}{2009}
+  \endentry
+
+  \entry{perceptron}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RF}{%
+         family={Rosenblatt},
+         familyi={R\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {United States Department of Commerce}%
+    }
+    \strng{namehash}{RF1}
+    \strng{fullhash}{RF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{The Perceptron : a theory of statistical separability in
+  cognitive systems}
+    \field{year}{1958}
+  \endentry
+
+  \entry{rumelhart1986learning}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RDE}{%
+         family={Rumelhart},
+         familyi={R\bibinitperiod},
+         given={David\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WRJ}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Ronald\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{RDEHGEWRJ1}
+    \strng{fullhash}{RDEHGEWRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{6088}
+    \field{pages}{533}
+    \field{title}{Learning representations by back-propagating errors}
+    \field{volume}{323}
+    \field{journaltitle}{nature}
+    \field{year}{1986}
+  \endentry
+
+  \entry{sahin2006neuralprec}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SS}{%
+         family={Sahin},
+         familyi={S\bibinitperiod},
+         given={Suhap},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Becerikli},
+         familyi={B\bibinitperiod},
+         given={Yasar},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yazici},
+         familyi={Y\bibinitperiod},
+         given={Suleyman},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SSBYYS1}
+    \strng{fullhash}{SSBYYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{International Conference on Neural Information
+  Processing}
+    \field{pages}{1105\bibrangedash 1112}
+    \field{title}{Neural network implementation in hardware using FPGAs}
+    \field{year}{2006}
+  \endentry
+
+  \entry{opencl}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJE}{%
+         family={Stone},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gohara},
+         familyi={G\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Guochun},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SJEGDSG1}
+    \strng{fullhash}{SJEGDSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{66\bibrangedash 73}
+    \field{title}{OpenCL: A parallel programming standard for heterogeneous
+  computing systems}
+    \field{volume}{12}
+    \field{journaltitle}{Computing in science \& engineering}
+    \field{year}{2010}
+  \endentry
+
+  \entry{szegedy2015going}{inproceedings}{}
+    \name{author}{9}{}{%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Yangqing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sermanet},
+         familyi={S\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Reed},
+         familyi={R\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Anguelov},
+         familyi={A\bibinitperiod},
+         given={Dragomir},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Erhan},
+         familyi={E\bibinitperiod},
+         given={Dumitru},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vanhoucke},
+         familyi={V\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rabinovich},
+         familyi={R\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCLWJYSPRSADEDVVRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}
+    \field{pages}{1\bibrangedash 9}
+    \field{title}{Going deeper with convolutions}
+    \field{year}{2015}
+  \endentry
+
+  \entry{resnet}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vanhoucke},
+         familyi={V\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=AAA}{%
+         family={Alemi},
+         familyi={A\bibinitperiod},
+         given={Alexander\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCISVVAAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{AAAI}
+    \field{pages}{12}
+    \field{title}{Inception-v4, inception-resnet and the impact of residual
+  connections on learning.}
+    \field{volume}{4}
+    \field{year}{2017}
+  \endentry
+
+  \entry{wang1994robustness}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WK}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kaining},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MAN}{%
+         family={Michel},
+         familyi={M\bibinitperiod},
+         given={Anthony\bibnamedelima N},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WKMAN1}
+    \strng{fullhash}{WKMAN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{2}
+    \field{pages}{251\bibrangedash 259}
+    \field{title}{Robustness and perturbation analysis of a class of artificial
+  neural networks}
+    \field{volume}{7}
+    \field{journaltitle}{Neural networks}
+    \field{year}{1994}
+  \endentry
+
+  \entry{widrow199030}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WB}{%
+         family={Widrow},
+         familyi={W\bibinitperiod},
+         given={Bernard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LMA}{%
+         family={Lehr},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WBLMA1}
+    \strng{fullhash}{WBLMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{9}
+    \field{pages}{1415\bibrangedash 1442}
+    \field{title}{30 years of adaptive neural networks: perceptron, madaline,
+  and backpropagation}
+    \field{volume}{78}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1990}
+  \endentry
+
+  \entry{wilson2015design}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WP}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Newnes}%
+    }
+    \strng{namehash}{WP1}
+    \strng{fullhash}{WP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Design Recipes for FPGAs: Using Verilog and VHDL}
+    \field{year}{2015}
+  \endentry
+
+  \entry{xilinxreference}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=XVA}{%
+         family={Xilinx\bibnamedelima Vivado},
+         familyi={X\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={AXI},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {UG1037}%
+    }
+    \strng{namehash}{XVA1}
+    \strng{fullhash}{XVA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{Reference Guide}
+  \endentry
+\enddatalist
+\endinput
