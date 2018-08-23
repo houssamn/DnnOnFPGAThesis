@@ -57,6 +57,16 @@ We have briefly motivated the main goal of HLS in abstracting the process of har
 \subsection{OpenCL for FPGAs}
 OpenCL\texttrademark ( Open Computing Language ) is the open standard for cross-platform parallel programming that is a subset of the C standard \cite{opencl}. OpenCL provides a programming model that fits the GPU architecture perfectly and is able to exploit parallelism through vectorized operations. GPUs are able to perform vectorized operations and have higher memory bandwidth than CPUs, enabling them to achieve high throughput by doing parallel floating point operations. The challenge in adopting OpenCL for FPGAs is being able to not only vectorize operations but to also create efficient pipelines that fully utilize the resources available on the board. For that the Intel OpenCL SDK \cite{intel2016sdk, deepfpga} performs those optimizations and allows the user to use pre-defined pragmas in order to adapt OpenCL for FPGAs. This again beats the goal for portability across platforms when different customizations have to be introduced for FPGAs, however pipeline parallelism and complex data-flow instructions prove to be an advantage and a necessary feature that should be exploited on FPGAs \cite{ddl, deepfpga}.  It is also worth noting that effort for optimizing the same OpenCL kernel differs between FPGAs and GPUs differs a lot putting FPGAs at a slight disadvantage. The reason is that with GPUs, the developer looks for the best mapping into the fixed architecture, while for FPGAs the developer guides the compiler into finding the best control and memory architecture for the given task. Moreover, compiling OpenCL kernels for FPGAs takes much longer than on GPUs as more board-specific optimizations can be done and because FPGAs allow for a broad design-exploration space.
 
+%----------------------------------------------------------------------------------------
+
+\section{Related Work}
+
+An implementation called “PipeCNN” \cite{pipecnn} using OpenCL has explored the power of pipelining neural network layers to lower the overall memory bandwidth requirement in between network layers. The implementation was able to achieve a maximum throughput of 12.8GB/s on the Altera Stratix-5 board. The implementation however only covers convolution layers and fully connected layers. A single matrix-multiplication based kernels implements both of the convolution and fully connected layers and pipelines them with a pooling operation. In this implementation, full inter-layer communication is done by communicating through global memory. Local response normalization (LRN) which is done after the pooling layer is not pipelined directly and also communicated through global memory. The implementation, even though it utilizes the full memory bandwidth of the board, requires a lot of overhead for inter-layer communication and can be further reduced by pipelining more layers together.
+
+The work of DiCecco et. al \cite{caffeinated} utilizes the Xilinx SDAccel \footnote{/url{https://www.xilinx.com/products/design-tools/software-zone/sdaccel.html} Last Accessed: 23/08/2018 } toolset for optimizing neural network designs. They implement an FPGA backend for the popular neural network framework Caffe \cite{caffe}.This methodology makes use the already existing testbenches in Caffe for verifying correctness of the FPGA implementations. The authors run experiments using modern deep neural nets such as Alexnet, GoogleNet, and VGG-16 and achieve a maximum throughput of 50 GFLOPS across the 3x3 convolutions on the Xilinx Virtex 7. The authors also implement convolution using the Winograd \cite{lavin2016fast} minimum filtering algorithm. This filtering scheme minimizes the number of multiplications required due to overlapping intermediate results in overlapping filter computations. The work lays the stepping stones and mentions the challenges in integrating FPGAs as accelerators for popular DNN frameworks like Caffe such as long reprogrammability times ( 100-400ms for FPGA vs 0,001ms-0.005ms for a GPU ) and thus different types of parallelism should be exploited to fill in the gaps. FPGA implementations also require offline compilation and several vendor specific attributes to achieve optimal performance. The results are not impressive showing that GPU performance is still higher and the framework is still far from integrating the different layers of a DNN other than convolutions.
+
+Zhang et. al.\cite{Zhang:2015} were able to achieve 61.2 GFLOPS under 100 MHz on a VC707 FPGA. The main contribution of this work is an analysis framework which takes into consideration both the computing resources and the memory bandwidth provided by the board to guide the design space exploration phase. They balance out loop unrolling factors and loop tiling methods to balance the tradeoffs of using compute resources and memory bandwidth. The work however only focuses on the inference phase and lacks the analysis of the training phase of a CNN which could take days or weeks for a single learning task. They also focus on single layer optimizations for and not on multiple layer optimizations. This is important as compute intensive layers like convolutions can be balanced out with bandwidth hungry layers like the fully connected layers to achieve better performance. 
+
 
 %----------------------------------------------------------------------------------------
 
@@ -70,15 +80,15 @@ This work aims to leverage the benefits of OpenCL for programming FPGAs and targ
 
 \begin{itemize}
 
-\item Section 2 explains the algorithms and terminology in deep learning. 
+\item Chapter 2 explains the algorithms and terminology in deep learning. 
 
-\item Section 3 explains the toolset and hardware implementation of deep neural networks on FPGAs.
+\item Chapter 3 explains the toolset and hardware implementation of deep neural networks on FPGAs.
 
-\item Section 4 analyzes and discusses the results of the experiments of running the implementation on the FPGA.
+\item Chapter 4 analyzes and discusses the results of the experiments of running the implementation on the FPGA.
 
-\item Section 5 servers as a primer and best practices in using OpenCL for FPGAs.
+\item Chapter 5 servers as a primer and best practices in using OpenCL for FPGAs.
 
-\item Section 6 contains the concluding remarks and future direction of work.
+\item Chapter 6 contains the concluding remarks and future direction of work.
 
 \end{itemize}
 
