@@ -42,12 +42,18 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
 \usepackage{mathpazo} % Use the Palatino font by default
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 \usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{example.bib} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage[ruled]{algorithm2e}
+
+\renewcommand{\arraystretch}{2}
+
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS

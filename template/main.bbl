@@ -94,6 +94,83 @@
     \field{year}{2016}
   \endentry
 
+  \entry{abadi2016tensorflow}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=AM}{%
+         family={Abadi},
+         familyi={A\bibinitperiod},
+         given={Mart{\'\i}n},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Barham},
+         familyi={B\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jianmin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhifeng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Devin},
+         familyi={D\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghemawat},
+         familyi={G\bibinitperiod},
+         given={Sanjay},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Irving},
+         familyi={I\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Isard},
+         familyi={I\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMBPCJCZDADJDMGSIGIM+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{OSDI}
+    \field{pages}{265\bibrangedash 283}
+    \field{title}{Tensorflow: a system for large-scale machine learning.}
+    \field{volume}{16}
+    \field{year}{2016}
+  \endentry
+
   \entry{ddl}{article}{}
     \name{author}{2}{}{%
       {{hash=BNT}{%
@@ -198,6 +275,78 @@
     \field{pages}{1\bibrangedash 48}
     \field{title}{Theano: Deep learning on gpus with python}
     \field{volume}{3}
+    \field{year}{2011}
+  \endentry
+
+  \entry{chen1991orthogonal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CS}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Sheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CCF}{%
+         family={Cowan},
+         familyi={C\bibinitperiod},
+         given={Colin\bibnamedelima FN},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=GPM}{%
+         family={Grant},
+         familyi={G\bibinitperiod},
+         given={Peter\bibnamedelima M},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CSCCFGPM1}
+    \strng{fullhash}{CSCCFGPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{302\bibrangedash 309}
+    \field{title}{Orthogonal least squares learning algorithm for radial basis
+  function networks}
+    \field{volume}{2}
+    \field{journaltitle}{IEEE Transactions on neural networks}
+    \field{year}{1991}
+  \endentry
+
+  \entry{collobert2011torch7}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CR}{%
+         family={Collobert},
+         familyi={C\bibinitperiod},
+         given={Ronan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kavukcuoglu},
+         familyi={K\bibinitperiod},
+         given={Koray},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Farabet},
+         familyi={F\bibinitperiod},
+         given={Cl{\'e}ment},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CRKKFC1}
+    \strng{fullhash}{CRKKFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{BigLearn, NIPS workshop}
+    \field{number}{EPFL-CONF-192376}
+    \field{title}{Torch7: A matlab-like environment for machine learning}
     \field{year}{2011}
   \endentry
 
@@ -476,6 +625,74 @@
     \field{year}{2008}
   \endentry
 
+  \entry{resnet}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HK}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Kaiming},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xiangyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Shaoqing},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HK+1}
+    \strng{fullhash}{HKZXRSSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}
+    \field{pages}{770\bibrangedash 778}
+    \field{title}{Deep residual learning for image recognition}
+    \field{year}{2016}
+  \endentry
+
+  \entry{hochreiter1998vanishing}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HS}{%
+         family={Hochreiter},
+         familyi={H\bibinitperiod},
+         given={Sepp},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {World Scientific}%
+    }
+    \strng{namehash}{HS1}
+    \strng{fullhash}{HS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{02}
+    \field{pages}{107\bibrangedash 116}
+    \field{title}{The vanishing gradient problem during learning recurrent
+  neural nets and problem solutions}
+    \field{volume}{6}
+    \field{journaltitle}{International Journal of Uncertainty, Fuzziness and
+  Knowledge-Based Systems}
+    \field{year}{1998}
+  \endentry
+
   \entry{hubara2016binarized}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=HI}{%
@@ -519,6 +736,39 @@
     \field{pages}{4107\bibrangedash 4115}
     \field{title}{Binarized neural networks}
     \field{year}{2016}
+  \endentry
+
+  \entry{hubel1962receptive}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HDH}{%
+         family={Hubel},
+         familyi={H\bibinitperiod},
+         given={David\bibnamedelima H},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=WTN}{%
+         family={Wiesel},
+         familyi={W\bibinitperiod},
+         given={Torsten\bibnamedelima N},
+         giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{HDHWTN1}
+    \strng{fullhash}{HDHWTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{106\bibrangedash 154}
+    \field{title}{Receptive fields, binocular interaction and functional
+  architecture in the cat's visual cortex}
+    \field{volume}{160}
+    \field{journaltitle}{The Journal of physiology}
+    \field{year}{1962}
   \endentry
 
   \entry{densenet}{article}{}
@@ -659,6 +909,40 @@
     \field{year}{2014}
   \endentry
 
+  \entry{alexnet}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KASIHGE1}
+    \strng{fullhash}{KASIHGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{1097\bibrangedash 1105}
+    \field{title}{Imagenet classification with deep convolutional neural
+  networks}
+    \field{year}{2012}
+  \endentry
+
   \entry{deepfpga}{article}{}
     \name{author}{3}{}{%
       {{hash=LG}{%
@@ -717,6 +1001,88 @@
     \field{pages}{4013\bibrangedash 4021}
     \field{title}{Fast algorithms for convolutional neural networks}
     \field{year}{2016}
+  \endentry
+
+  \entry{lecun2015deep}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{LYBYHG1}
+    \strng{fullhash}{LYBYHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{7553}
+    \field{pages}{436}
+    \field{title}{Deep learning}
+    \field{volume}{521}
+    \field{journaltitle}{nature}
+    \field{year}{2015}
+  \endentry
+
+  \entry{lenet}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Bottou},
+         familyi={B\bibinitperiod},
+         given={L{\'e}on},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Haffner},
+         familyi={H\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYBLBYHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{11}
+    \field{pages}{2278\bibrangedash 2324}
+    \field{title}{Gradient-based learning applied to document recognition}
+    \field{volume}{86}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1998}
   \endentry
 
   \entry{hlssurv}{article}{}
@@ -791,6 +1157,38 @@
     \field{volume}{27}
     \field{journaltitle}{AI magazine}
     \field{year}{2006}
+  \endentry
+
+  \entry{muller1994neural}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MU}{%
+         family={Muller},
+         familyi={M\bibinitperiod},
+         given={UA},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gunzinger},
+         familyi={G\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{MUGA1}
+    \strng{fullhash}{MUGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Neural Networks, 1994. IEEE World Congress on
+  Computational Intelligence., 1994 IEEE International Conference on}
+    \field{pages}{3961\bibrangedash 3966}
+    \field{title}{Neural net simulation on parallel computers}
+    \field{volume}{6}
+    \field{year}{1994}
   \endentry
 
   \entry{nurvitadhi2017can}{inproceedings}{}
@@ -961,6 +1359,26 @@
     \field{year}{1958}
   \endentry
 
+  \entry{ruder2016overview}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RS}{%
+         family={Ruder},
+         familyi={R\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{An overview of gradient descent optimization algorithms}
+    \field{journaltitle}{arXiv preprint arXiv:1609.04747}
+    \field{year}{2016}
+  \endentry
+
   \entry{rumelhart1986learning}{article}{}
     \name{author}{3}{}{%
       {{hash=RDE}{%
@@ -1034,6 +1452,57 @@
     \field{pages}{1105\bibrangedash 1112}
     \field{title}{Neural network implementation in hardware using FPGAs}
     \field{year}{2006}
+  \endentry
+
+  \entry{dropout}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SN}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Nitish},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JMLR. org}%
+    }
+    \strng{namehash}{SN+1}
+    \strng{fullhash}{SNHGKASISR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{1929\bibrangedash 1958}
+    \field{title}{Dropout: a simple way to prevent neural networks from
+  overfitting}
+    \field{volume}{15}
+    \field{journaltitle}{The Journal of Machine Learning Research}
+    \field{year}{2014}
   \endentry
 
   \entry{opencl}{article}{}
@@ -1143,47 +1612,6 @@
     \field{pages}{1\bibrangedash 9}
     \field{title}{Going deeper with convolutions}
     \field{year}{2015}
-  \endentry
-
-  \entry{resnet}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=SC}{%
-         family={Szegedy},
-         familyi={S\bibinitperiod},
-         given={Christian},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=IS}{%
-         family={Ioffe},
-         familyi={I\bibinitperiod},
-         given={Sergey},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=VV}{%
-         family={Vanhoucke},
-         familyi={V\bibinitperiod},
-         given={Vincent},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=AAA}{%
-         family={Alemi},
-         familyi={A\bibinitperiod},
-         given={Alexander\bibnamedelima A},
-         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SC+1}
-    \strng{fullhash}{SCISVVAAA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{booktitle}{AAAI}
-    \field{pages}{12}
-    \field{title}{Inception-v4, inception-resnet and the impact of residual
-  connections on learning.}
-    \field{volume}{4}
-    \field{year}{2017}
   \endentry
 
   \entry{pipecnn}{inproceedings}{}
