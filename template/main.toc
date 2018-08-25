@@ -42,8 +42,11 @@
 \contentsline {subsubsection}{Row-stationary Implementation}{18}{section*.106}
 \contentsline {subsubsection}{Other Implementations}{19}{section*.109}
 \contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{20}{subsection.110}
-\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{20}{section.111}
-\contentsline {section}{\numberline {3.4}Integration with Deep500}{20}{section.112}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{21}{appendix.113}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{21}{section.114}
-\contentsline {chapter}{Bibliography}{23}{appendix*.115}
+\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{21}{subsection.112}
+\contentsline {subsection}{\numberline {3.2.4}Softmax}{21}{subsection.113}
+\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{21}{subsection.115}
+\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{23}{section.119}
+\contentsline {section}{\numberline {3.4}Integration with Deep500}{25}{section.123}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{27}{appendix.127}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{27}{section.128}
+\contentsline {chapter}{Bibliography}{29}{appendix*.129}

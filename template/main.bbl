@@ -426,6 +426,37 @@
     \field{year}{2014}
   \endentry
 
+  \entry{torch}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=CR}{%
+         family={Collobert},
+         familyi={C\bibinitperiod},
+         given={Ronan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Samy},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Marithoz},
+         familyi={M\bibinitperiod},
+         given={Johnny},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CRBSMJ1}
+    \strng{fullhash}{CRBSMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Torch: A Modular Machine Learning Software Library}
+    \field{year}{2002}
+  \endentry
+
   \entry{collobert2011torch7}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=CR}{%
@@ -1994,75 +2025,6 @@
     \field{sortinit}{X}
     \field{sortinithash}{X}
     \field{title}{Reference Guide}
-  \endentry
-
-  \entry{Zhang:2015}{inproceedings}{}
-    \name{author}{6}{}{%
-      {{hash=ZC}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Chen},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=LP}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Peng},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=SG}{%
-         family={Sun},
-         familyi={S\bibinitperiod},
-         given={Guangyu},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=GY}{%
-         family={Guan},
-         familyi={G\bibinitperiod},
-         given={Yijin},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=XB}{%
-         family={Xiao},
-         familyi={X\bibinitperiod},
-         given={Bingjun},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=CJ}{%
-         family={Cong},
-         familyi={C\bibinitperiod},
-         given={Jason},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM}%
-    }
-    \keyw{acceleration, convolutional neural network, fpga, roofline model}
-    \strng{namehash}{ZC+1}
-    \strng{fullhash}{ZCLPSGGYXBCJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{booktitle}{Proceedings of the 2015 ACM/SIGDA International Symposium
-  on Field-Programmable Gate Arrays}
-    \verb{doi}
-    \verb 10.1145/2684746.2689060
-    \endverb
-    \field{isbn}{978-1-4503-3315-3}
-    \field{pages}{161\bibrangedash 170}
-    \field{series}{FPGA '15}
-    \field{title}{Optimizing FPGA-based Accelerator Design for Deep
-  Convolutional Neural Networks}
-    \verb{url}
-    \verb http://doi.acm.org/10.1145/2684746.2689060
-    \endverb
-    \list{location}{1}{%
-      {Monterey, California, USA}%
-    }
-    \field{year}{2015}
-    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{2018combined}{inproceedings}{}
