@@ -33,6 +33,17 @@
 \contentsline {subsection}{\numberline {2.4.1}Data Parallelism}{13}{subsection.54}
 \contentsline {subsection}{\numberline {2.4.2}Model Parallelism}{13}{subsection.55}
 \contentsline {subsection}{\numberline {2.4.3}Pipeline Parallelism}{14}{subsection.56}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{15}{appendix.57}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{15}{section.58}
-\contentsline {chapter}{Bibliography}{17}{appendix*.59}
+\contentsline {chapter}{\numberline {3}Hardware Implementation}{15}{chapter.57}
+\contentsline {section}{\numberline {3.1}LeNet Pilot}{15}{section.58}
+\contentsline {section}{\numberline {3.2}Layer Implementations}{16}{section.60}
+\contentsline {subsection}{\numberline {3.2.1}Convolution Layer}{16}{subsection.61}
+\contentsline {subsubsection}{Simple Implementation with Unrolling}{16}{section*.63}
+\contentsline {subsubsection}{Sliding Buffer Implementation}{17}{section*.103}
+\contentsline {subsubsection}{Row-stationary Implementation}{18}{section*.106}
+\contentsline {subsubsection}{Other Implementations}{19}{section*.109}
+\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{20}{subsection.110}
+\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{20}{section.111}
+\contentsline {section}{\numberline {3.4}Integration with Deep500}{20}{section.112}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{21}{appendix.113}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{21}{section.114}
+\contentsline {chapter}{Bibliography}{23}{appendix*.115}

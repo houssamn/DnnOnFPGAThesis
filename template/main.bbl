@@ -317,6 +317,115 @@
     \field{year}{1991}
   \endentry
 
+  \entry{eyeriss}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CYH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yu-Hsin},
+         giveni={Y\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Krishna},
+         familyi={K\bibinitperiod},
+         given={Tushar},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=EJS}{%
+         family={Emer},
+         familyi={E\bibinitperiod},
+         given={Joel\bibnamedelima S},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Sze},
+         familyi={S\bibinitperiod},
+         given={Vivienne},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CYH+1}
+    \strng{fullhash}{CYHKTEJSSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{127\bibrangedash 138}
+    \field{title}{Eyeriss: An energy-efficient reconfigurable accelerator for
+  deep convolutional neural networks}
+    \field{volume}{52}
+    \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+    \field{year}{2017}
+  \endentry
+
+  \entry{cudnn}{article}{}
+    \name{author}{7}{}{%
+      {{hash=CS}{%
+         family={Chetlur},
+         familyi={C\bibinitperiod},
+         given={Sharan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Woolley},
+         familyi={W\bibinitperiod},
+         given={Cliff},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VP}{%
+         family={Vandermersch},
+         familyi={V\bibinitperiod},
+         given={Philippe},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tran},
+         familyi={T\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Catanzaro},
+         familyi={C\bibinitperiod},
+         given={Bryan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Shelhamer},
+         familyi={S\bibinitperiod},
+         given={Evan},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS+1}
+    \strng{fullhash}{CSWCVPCJTJCBSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1410.0759
+    \endverb
+    \field{title}{cuDNN: Efficient Primitives for Deep Learning}
+    \verb{url}
+    \verb http://arxiv.org/abs/1410.0759
+    \endverb
+    \field{volume}{abs/1410.0759}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2014}
+  \endentry
+
   \entry{collobert2011torch7}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=CR}{%
@@ -380,6 +489,36 @@
     \field{volume}{34}
     \field{journaltitle}{ACM Computing Surveys (csuR)}
     \field{year}{2002}
+  \endentry
+
+  \entry{cong2014minimizing}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CJ}{%
+         family={Cong},
+         familyi={C\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XB}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Bingjun},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CJXB1}
+    \strng{fullhash}{CJXB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{International conference on artificial neural networks}
+    \field{pages}{281\bibrangedash 290}
+    \field{title}{Minimizing computation in convolutional neural networks}
+    \field{year}{2014}
   \endentry
 
   \entry{csaji2001approximation}{article}{}
@@ -1544,6 +1683,51 @@
     \field{year}{2010}
   \endentry
 
+  \entry{sze2017efficient}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SV}{%
+         family={Sze},
+         familyi={S\bibinitperiod},
+         given={Vivienne},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CYH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yu-Hsin},
+         giveni={Y\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=YTJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Tien-Ju},
+         giveni={T\bibinitperiod-J\bibinitperiod},
+      }}%
+      {{hash=EJS}{%
+         family={Emer},
+         familyi={E\bibinitperiod},
+         given={Joel\bibnamedelima S},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SV+1}
+    \strng{fullhash}{SVCYHYTJEJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{12}
+    \field{pages}{2295\bibrangedash 2329}
+    \field{title}{Efficient processing of deep neural networks: A tutorial and
+  survey}
+    \field{volume}{105}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{2017}
+  \endentry
+
   \entry{szegedy2015going}{inproceedings}{}
     \name{author}{9}{}{%
       {{hash=SC}{%
@@ -1612,6 +1796,57 @@
     \field{pages}{1\bibrangedash 9}
     \field{title}{Going deeper with convolutions}
     \field{year}{2015}
+  \endentry
+
+  \entry{vasilache2014fast}{article}{}
+    \name{author}{6}{}{%
+      {{hash=VN}{%
+         family={Vasilache},
+         familyi={V\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mathieu},
+         familyi={M\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chintala},
+         familyi={C\bibinitperiod},
+         given={Soumith},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Piantino},
+         familyi={P\bibinitperiod},
+         given={Serkan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VN+1}
+    \strng{fullhash}{VNJJMMCSPSLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Fast convolutional nets with fbfft: A GPU performance
+  evaluation}
+    \field{journaltitle}{arXiv preprint arXiv:1412.7580}
+    \field{year}{2014}
   \endentry
 
   \entry{pipecnn}{inproceedings}{}
@@ -1828,6 +2063,44 @@
     }
     \field{year}{2015}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{2018combined}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ZHR}{%
+         family={Zohouri},
+         familyi={Z\bibinitperiod},
+         given={Hamid\bibnamedelima Reza},
+         giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Podobas},
+         familyi={P\bibinitperiod},
+         given={Artur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matsuoka},
+         familyi={M\bibinitperiod},
+         given={Satoshi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{ZHRPAMS1}
+    \strng{fullhash}{ZHRPAMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 2018 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \field{pages}{153\bibrangedash 162}
+    \field{title}{Combined spatial and temporal blocking for high-performance
+  stencil computation on FPGAs using OpenCL}
+    \field{year}{2018}
   \endentry
 \enddatalist
 \endinput
