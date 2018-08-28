@@ -1,5 +1,13 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces The effects of treatments X and Y on the four groups studied.\relax }}{12}{table.caption.47}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Loss Functions}}{11}{table.caption.43}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Number of Trainable Parameters for Custom LeNet Implementation\relax }}{15}{table.caption.61}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Configuration for the Part I Test Case\relax }}{27}{table.caption.131}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Results of Part I Test\relax }}{28}{table.caption.134}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Configuration for Layer-3 LeNet\relax }}{28}{table.caption.136}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

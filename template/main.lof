@@ -1,5 +1,24 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces An Electron}}{13}{figure.caption.49}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet}}{8}{figure.caption.33}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Connections}}{9}{figure.caption.34}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces AlexNet}}{10}{figure.caption.37}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Residual Learning}}{10}{figure.caption.39}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Local Backpropagation}}{12}{figure.caption.46}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sliding Buffer}}{18}{figure.caption.106}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Shift Register}}{18}{figure.caption.107}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Data Re-use in Eyeriss}}{18}{figure.caption.109}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 2D Spatial Convolution}}{19}{figure.caption.110}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces maxpool}}{20}{figure.caption.113}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Types of inter-layer communication}}{22}{figure.caption.118}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Propagation of data in convolution}}{23}{figure.caption.120}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Templating Kernels}}{24}{figure.caption.123}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Tempate Generator Usage}}{24}{figure.caption.124}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Intergration with Deep500 Diagram}}{25}{figure.caption.128}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces profilerow}}{27}{figure.caption.133}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

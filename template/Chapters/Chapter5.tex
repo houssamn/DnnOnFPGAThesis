@@ -1,0 +1,90 @@
+% Chapter 4
+
+\chapter{Intel OpenCL SDK Primer} % Main chapter title
+
+\label{Chapter5} %
+
+%----------------------------------------------------------------------------------------
+
+\section{Development Workflow}
+
+The standard workflow recommended by the Intel OpenCL programming guide\cite{progguide} is to compile a kernel for emulation in order to verify correctness. The software emulation that Intel offers mimics the real deployment of a kernel in production and requires writing a host program to control the kernel program ( as in a typical OpenCL deployment ). This overhead of the host program includes writing code for creating and launching a kernel, allocating and managing buffer space, and a lot of overhead platform detection code which makes the overall development process slower. For that we follow a different approach to developing OpenCL kernels in order to improve functional testing for correctness during the initial stages of kernel compilation.
+
+ As OpenCL is a C-based language, kernels can be fully compiled using GCC asides from the OpenCL  API specific calls. This may appear counter-intuitive as OpenCL has a different programming model, but for FPGAs we are usually writing kernels as a single Work item as opposed to NDRange kernels \cite{opencl}. Knowing this, we are not explicitly using the programming model’s thread parallel execution paradigm. This means that kernels can be compiled and tested as ordinary C-functions as a single work item that follows a sequential C programming style. This also makes it easier to use gdb for debugging any issues with the kernel before emulation and creating a host program. 
+ 
+ To fully enable this feature we have abstracted the OpenCL specifics using macros as a first step. In the small example in \ref{code:abstraction}, the \emph{kernel} keyword informs the OpenCL compiler that this function is a kernel and not an ordinary function. We don't need this specifier when compiling for C using GCC so we specialize it only for Intel's OpenCL compiler. This is one way to allow multiple compilers to compile the same file for different objectives. Another way is to use templating engines for our files so we leave this as future work.
+ 
+\lstinputlisting[style=CStyle, caption={simple example of abstracting API specifics}]{code/kernel.c} \label{code:abstraction} 
+  
+We have automated this abstraction process and extended it to several other features like OpenCL channel communication. For that, we overrode Intel's channel API \cite{intel2016sdk} functions like \emph{read\textunderscore channel\textunderscore intel()} and \emph{write\textunderscore channel\textunderscore intel()} and direct those to reads and writes from a thread-safe implementation of \emph{blocking queues}. The overriden functionality is again only introduced when the kernel is compiled with GCC and not the Intel compiler. When testing with multiple kernels, each kernel is launched in a separate thread and we can successfully emulate a multi-threaded environment and can debug errors in communication between the kernels such as queue starvation or overflow. 
+Template files would be a another option for abstracting those specifics, so we leave this as future work for now. This development workflow serves as a first step to writing generic C-functions with cross-platform support.
+
+\section{Single Work-item vs ND-Range Kernel}
+
+OpenCL’s view of shared memory fits more closely to GPUs than FPGAs, the need for portability of code for different architectures is still an ultimate goal that would enable efficient acceleration across different hardware devices. This is mainly why we see FPGA manufacturers like Altera and Xilinx improving the SDKs for supporting the development of FPGA kernels using OpenCL. Usually by using OpenCL’s programming model \cite{opencl}, parallelism can be achieved by exploiting the ND-range kernel feature to parallelize a lot of work. Parallelization is done when the work is split up into multiple work groups consisting of work items. This division can be represented along one, two, or even three dimensions. This parallelization is useful and makes coding easier as the inputs and intermediate feature maps in the case of a convolutional neural networks are multidimensional and can easily be split. This splitting allows the GPU to execute these kernels simultaneously on separate processors. 
+
+In terms of supporting this, an FPGA has a fixed architecture and cannot invoke copies of the same kernel dynamically through a host program. Moreover, the specification by Intel recommends the use of single work-items when there are memory dependencies between the different work items. Synchronization in an NDrange programming model will thus result in pipeline flushes thus decreasing the pipeline efficiency. For that full efficiency can be better achieved by using the single-work item model. For example shift registers can only be inferred only in the single-work item as we need to have a main loop that accepts input and performs the shift operation at every iteration. For that, we use only single work-item kernels in our work as this allows us to perform multiple optimizations that are only possible at compile time and not host-program runtime. 
+
+In case, thread level parallelism is required, and there are no interdependencies, this can be done by wrapping the function in a loop and unrolling over the computation which provides a more efficient implementation in hardware. 
+
+\section{Inferring Shift-Registers}
+
+We discussed before how one of the convolution implementations \ref{fig:sliding buffer} relies on a shift-register for storing a sliding window of the input feature map. The trick to make that work is to create a loop that does the shift operation and ( move all items by one position ) and then explicitly specify the \emph{unroll} pragma so that the compiler an perform this optimization. An example is shown in listing \ref{code:shift}.
+
+\newpage
+
+\lstinputlisting[style=CStyle, caption={Shift Register Inference}]{code/shiftreg.c} \label{code:shift} 
+
+\section{Reconfiguring the FPGA}
+
+Some tasks may requires reprogramming an FPGA during runtime. The Intel FPGA specifies very little about reprogramming a kernel during host runtime. Since reprogramming takes a considerably large time ($\approx100ms-700ms $), it doesn’t make sense to trigger this feature often. We have used this feature in training a neural network with large batch sizes to minimize the delay introduced by reconfiguration. In the training experiment we compiled the forward and backward propagation kernels into two separate binaries as they were too large to be synthesized together in the same design. It is suitable only when batching with large sizes such as 2048 so that reprogramming time is minimal with respect to actual compute time. 
+
+Our advice for this to work is that one must make sure to finish running kernels by running $ clFinish(queue) $ on all of the task queues and cleanup resources in a separate $ cleanup()$ procedure when switching between configurations. The cleanup procedure should clear all buffers used by the kernels, then the kernels themselves. The program binary then has to be recreated with the second kernel through a call to $createProgramFromBinary()$ . Under the hoods, this function creates a handle to the device and reprograms it given the binary string of the new kernel we wish to use. Also it is not guaranteed that when re-allocating buffers in global memory that they will contain the same old values, therefore one must make sure to transfer everything in global memory back and forth between the device and the host when reconfiguring separate kernels.
+
+\section{Loops}
+
+The general advice for loops is that the less loops the better. When working with multidimentional grids it is natural to use multiple nested loops, however this decreases the efficiency of the static code optimizer. We introduce a workaround for collapsing nested loops into a single loop. This optimization was also discussed by \cite{2018combined}. For example a nested loop \ref{code:loopa} can be collapsed to onw loop as in \ref{code:loopb}.
+
+\begin{minipage}{0.5\textwidth}
+  
+\lstinputlisting[style=CStyle, caption={nested loops, src\cite{2018combined}}]{code/loopa.c} \label{code:loopa}   
+  
+\end{minipage}% This must go next to `\end{minipage}`
+\vspace{0pt}
+\hspace{5pt}
+\begin{minipage}{0.5\textwidth}
+ 
+\lstinputlisting[style=CStyle, caption={collapsed loops, src\cite{2018combined}}]{code/loopb.c} \label{code:loopb} 
+ 
+\end{minipage}
+
+This allows the optimizer to better resolve the loop exit conditions and enable it to resolve the condition in one clock cycle. Also the nested structures require additional hardware to preserve state in between iterations. It is also better practice to limit variables to the scope of variables to only where they are used and not in higher level loops and collapsing loops can be a measure against this.
+
+
+\section{Relieving Loop-Carried Memory Dependencies}
+
+When using OpenCl, it is easy forget that we are not developing a CPU application, so we tend discard unnecessary data structures and we do not consider memory dependencies in between instructions. When programming an FPGA however, it is important to relieve memory dependencies within iterations in order to get an optimal pipelined structure scheduled with an iteration interval $ ii=1 $ . Memory dependencies introduce stalls into the dataflow must wait until the result of a previous iteration is ready before proceeding to the next instruction. 
+
+For that we can use local memory to relieve dependencies and hold intermediate results, after that reductions can be performed on this local storage and the overall pipeline would become more efficient on the expense of a higher resource usage. A simple example in Intel's Best Practices Guide \cite{intelsdk} shows how one can use a register to hold intermediate results and relieve the loop-carried dependencies. We extend Intel's example when the requirement is to have a mix of pipelining and unrolling of an inner loop. Unrolling in an inner loop increases the critical path for the loop carried dependencies. 
+
+To overcome this problem, our solution consists of combining two optimizations. The first step is to transfer the dependency from global memory to a local register. The second step is to compile with the \emph{-fp-relaxed} compiler option so that the reduction on the local register is relaxed and performed in a tree-style adder without dependencies \ref{code:nondep}. 
+
+\newpage
+
+\lstinputlisting[style=CStyle, caption={Loop-carried dependencies}]{code/dep.c} \label{code:dep}   
+  
+\lstinputlisting[style=CStyle, caption={Dependencies are transferred to a local register}]{code/nondep.c} \label{code:nondep} 
+
+In some cases, we do not wish to use the \emph{-fp-relaxed} because we care about the numerical stability in other places in the code. In that case the memory dependency can be transferred to a local array of registers, and a reduction can be transferred on that array \ref{code:nondeptwo}. This is effectively implementing the \emph{-fp-relaxed} option on part of the code. We use this solution in our convolution operation as we also perform additional processing on the intermediate array of registers.
+
+\newpage
+
+\lstinputlisting[style=CStyle, caption={Dependency transferred to a local array}]{code/nondeptwo.c} \label{code:nondeptwo} 
+
+
+\section{Using Multiple Queues}
+
+In order to execute multiple kernels concurrently, one must instantiate multiple command queues and enqueue the concurrent tasks separately within the same program. This is especially important for concurrent kernels that communicate through channels \cite{intel2016sdk}. Multiple queues should be considered in the emulation stage as well, since the emulator processes tasks sequentially, unless there are multiple queues involved, then it launches multiple threads to consume from the different queues at the same time.
+
+
+%----------------------------------------------------------------------------------------

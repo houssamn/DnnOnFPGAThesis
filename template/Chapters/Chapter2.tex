@@ -94,7 +94,7 @@ Several options exists for sample loss functions as shown in Table \ref{tab:loss
 	Cross-entropy loss 	& $l=\sum_{i=1}^{K}f_{w}(z_{i})\log(h(z_{i}))$  \\
 	 \hline
 	\end{tabular}
-\caption{Examples of loss functions}
+\caption[Loss Functions]{Examples of loss functions}
 \label{tab:loss}
 \end{table}
 
@@ -110,10 +110,10 @@ The error is back-propagated layer by layer from the output to the input layer b
  \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\textwidth]{Figures/backprop}
-\caption[Backprop]{ Local Gradient Backpropagation using the Chain Rule Source:\footnotemark} 
+\caption[Local Backpropagation]{ Local Gradient Backpropagation using the Chain Rule Source:\footnotemark} 
 \label{fig:Forward and Backward Passs}
 \end{figure}
- 
+
 \footnotetext{\url{https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html} Last Accessed: 23/08/2018}
 %---Add gradient descent algorithms as pseudo code
 

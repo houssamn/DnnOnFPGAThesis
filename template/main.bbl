@@ -1012,6 +1012,24 @@
     \field{year}{2016}
   \endentry
 
+  \entry{intelsdk}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=IF}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+         given={FPGA},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IF1}
+    \strng{fullhash}{IF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{SDK for OpenCL, Best practices guide (2017)}
+  \endentry
+
   \entry{caffe}{inproceedings}{}
     \name{author}{8}{}{%
       {{hash=JY}{%
@@ -1359,6 +1377,46 @@
     \field{title}{Neural net simulation on parallel computers}
     \field{volume}{6}
     \field{year}{1994}
+  \endentry
+
+  \entry{progguide}{book}{}
+    \name{author}{4}{}{%
+      {{hash=MA}{%
+         family={Munshi},
+         familyi={M\bibinitperiod},
+         given={Aaftab},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Gaster},
+         familyi={G\bibinitperiod},
+         given={Benedict},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MTG}{%
+         family={Mattson},
+         familyi={M\bibinitperiod},
+         given={Timothy\bibnamedelima G},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Ginsburg},
+         familyi={G\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Education}%
+    }
+    \strng{namehash}{MA+1}
+    \strng{fullhash}{MAGBMTGGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{OpenCL programming guide}
+    \field{year}{2011}
   \endentry
 
   \entry{nurvitadhi2017can}{inproceedings}{}

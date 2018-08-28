@@ -6,7 +6,7 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{LeNet Pilot}
+\section{LeNet Pilot} \label{lenetpilot}
 
 The main contribution in this work is in the form of a framework for the development and optimization of deep neural network operators on an FPGA. We use the Lenet \cite{lenet} model, knowing that it is outdated and outperformed by many other network architectures discussed before, due to its simplicity and as a pilot to test our framework. The simple network allows us to implement four different types of layers ( convolution, maxpooling, fully connected layers, and softmax). We also implement the backward propagation operators for all of the above layers.  We use LeNet to guide the numerous optimizations we perform on each layers separately and on the combination of the layers into a pipeline as well. We implement a modern variant of Lenet which only differs slightly from the original one. The first convolution in our model contains 10 feature maps as opposed to 6 in the original lenet\ref{fig:Lenet-5}, the second convolution outputs 20 feature maps as opposed to 15 feature maps. This adds more trainable parameters and thus we hope to use most of the MNIST dataset for training. For the sub-sampling layers we replace the average pooling operation by the maxpooling operation. We also use ReLU activation functions as opposed to the sigmoid as it has a lighter hardware implementaion and it has shown better results than the sigmoid in practice \cite{alexnet}. In the following sections we go more in detail about the implementation of the operators using OpenCL. 
 
@@ -36,7 +36,7 @@ The fundamental operation in Convolutional Neural Networks is the convolution op
 \end{equation}
 The nested loop structure lends itself easily for parallelization.  We will discuss three different implementations for this layer and compare tradeoffs that can be used by the user 
 
-\subsubsection{Simple Implementation with Unrolling}
+\subsubsection{Simple Implementation with Unrolling} \label{simpleimpl}
 
 With the help of high level synthesis, we can write a C-like implementation and analyze the performance. Assuming the kernel is pipelined we will require $ batch size * Img_h * Img_w * K_h * K_w * CH_{in} * CH_{out}  $ cycles theoretically to complete the convolution. To speed up the naive implementation we perform some optimizations:
 
@@ -58,7 +58,7 @@ Latency (L)  \approx ii * batch size * Img_h * Img_w * CH_{out} * K_h  \; cycles
 \lstinputlisting[style=CStyle, caption={code snippet from simple convolution}]{code/convPretty.c}
 
 
-\subsubsection{Sliding Buffer Implementation}
+\subsubsection{Sliding Buffer Implementation} \label{slidingimpl}
 
 In the simple, we buffered the coefficients in low-cost local registers to avoid having to read the coefficients multiple times from memory. We also notice that when the convolution window slides with a stride of 1 step, there will be also values in the input feature map that are re-used. For that, we implement a sliding window that contain's all previously seen values as long as they can still be useful. Our implementation is similar to what is describe by Zohouri et. al \cite{2018combined}. The shift-register holds the input values and multiple taps allow for accessing the desired values in the sliding window. The intel offline compile performs optimizations like replicating RAM blocks to allow for simulataneous access on the register. For that, only few compiler directives should be specified to make this implementation work. This implementations is also an example of how we can trade local storage to minimize bandwidth. We also carry over the optimization done in the simple implementation.
 
@@ -66,7 +66,7 @@ In the simple, we buffered the coefficients in low-cost local registers to avoid
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/slidingbuffer}
 \decoRule
-\caption[SlidingBuffer]{ Sliding Buffer Visualization. Source: \cite{2018combined}}
+\caption[Sliding Buffer]{ Sliding Buffer Visualization. Source: \cite{2018combined}}
 \label{fig:sliding buffer}
 \end{figure}
 
@@ -74,7 +74,7 @@ In the simple, we buffered the coefficients in low-cost local registers to avoid
 \centering
 \includegraphics[width=1.0\textwidth]{Figures/shiftregister}
 \decoRule
-\caption[ShiftRegister]{ Sliding 'window' variable is inferred as a shift-register by the OpenCL compiler }
+\caption[Shift Register]{ Sliding 'window' variable is inferred as a shift-register by the OpenCL compiler }
 \label{fig:shiftregister}
 \end{figure}
 
@@ -84,13 +84,13 @@ This implementation proves useful if data is provided in a streamlined fashion. 
 \newline
 One of the limitations this implementation is that we quickly run out of buffer space as the dimensions of the problem grow larger. The sliding buffer size grows linearly with the above parameters: $ CH_{in}, Img_{w}, K_h, K_w $. For our application in a network as small as the Lenet, we do not worry about this problem. The solution to scaling the sliding buffer implementation is to utilize spatial blocking and tile the input into blocks and perform the computations in these tiles separately \cite{2018combined}.
 
-\subsubsection{Row-stationary Implementation}
+\subsubsection{Row-stationary Implementation} \label{rowimpl}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{Figures/eyeriss}
 \decoRule
-\caption[Eyeriss]{ Datar re-use across processing elements in Eyeriss. Source: \cite{eyeriss}}
+\caption[Data Re-use in Eyeriss]{ Datar re-use across processing elements in Eyeriss. Source: \cite{eyeriss}}
 \label{fig:eyeriss}
 \end{figure}
 
@@ -98,7 +98,7 @@ One of the limitations this implementation is that we quickly run out of buffer 
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/eyeriss2}
 \decoRule
-\caption[Eyeriss2]{ 2D spatial convolution with a grid of processing elements (Eyeriss). Source: \cite{sze2017efficient}}
+\caption[2D Spatial Convolution]{ 2D spatial convolution with a grid of processing elements (Eyeriss). Source: \cite{sze2017efficient}}
 \label{fig:eyeriss2}
 \end{figure}
 
@@ -158,7 +158,7 @@ Use kernels that read and write to memory and run them sequentially and then eve
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{Figures/comm}
-\caption[comm]{ Two types of inter-layer communication }
+\caption[Types of inter-layer communication]{ Two types of inter-layer communication }
 \label{fig:comm}
 \end{figure}
 
@@ -172,7 +172,7 @@ The trainable weights are usually initialized to small random values in the rang
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/convprop}
-\caption[comm]{ Propagation of data in convolution }
+\caption[Propagation of data in convolution]{ Propagation of data in convolution }
 \decoRule
 \label{fig:conv}
 \end{figure}
@@ -194,7 +194,7 @@ Many parameters such as sliding window sizes, kernel size, and number of input a
 \centering
 \includegraphics[width=0.9\textwidth]{Figures/jinja}
 \decoRule
-\caption[comm]{ Templating Kernels }
+\caption[Templating Kernels]{ Templating Kernels }
 \label{fig:jinja}
 \end{figure}
 
@@ -202,7 +202,7 @@ Many parameters such as sliding window sizes, kernel size, and number of input a
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/usage}
 \decoRule
-\caption[comm]{ OpenCL Template Generator Usage }
+\caption[Tempate Generator Usage]{ OpenCL Template Generator Usage }
 \label{fig:usage}
 \end{figure}
 
@@ -217,7 +217,7 @@ Deep500\footnote{\url{https://github.com/deep500} Last Accessed 25/08/2018} is a
 \centering
 \includegraphics[width=1.0\textwidth]{Figures/integration}
 \decoRule
-\caption[integration]{ Custom FPGA Back-End for ONNX Models }
+\caption[Intergration with Deep500 Diagram]{ Custom FPGA Back-End for ONNX Models }
 \label{fig:integration}
 \end{figure}
 

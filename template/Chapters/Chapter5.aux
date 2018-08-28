@@ -1,57 +1,49 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Deep Neural Networks and Parallelism}{7}{chapter.28}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Intel OpenCL SDK Primer}{31}{chapter.139}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{Chapter2}{{2}{7}{Deep Neural Networks and Parallelism}{chapter.28}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Deep Learning Applications}{7}{section.29}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Convolutional Neural Networks}{7}{section.30}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Case Study : LeNet-5}{8}{subsection.31}}
-\@writefile{toc}{\contentsline {subsubsection}{Architecture}{8}{section*.32}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet}}{8}{figure.caption.33}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:Lenet-5}{{2.1}{8}{LeNet}{figure.caption.33}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Connections}}{9}{figure.caption.34}}
-\newlabel{fig:Lenet Connections}{{2.2}{9}{Connections}{figure.caption.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces AlexNet}}{10}{figure.caption.37}}
-\newlabel{fig:AlexNet Architecture}{{2.3}{10}{AlexNet}{figure.caption.37}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Modern Architectures}{10}{subsection.35}}
-\@writefile{toc}{\contentsline {subsubsection}{AlexNet}{10}{section*.36}}
-\@writefile{toc}{\contentsline {subsubsection}{ResNet}{10}{section*.38}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Residual Learning}}{10}{figure.caption.39}}
-\newlabel{fig:Residual Learning Basic Block}{{2.4}{10}{Residual Learning}{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Training and Backpropagation}{11}{section.40}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Loss Functions}}{11}{table.caption.43}}
-\newlabel{tab:loss}{{2.1}{11}{Loss Functions}{table.caption.43}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Gradient Descent}{11}{section*.44}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Local Backpropagation}}{12}{figure.caption.46}}
-\newlabel{fig:Forward and Backward Passs}{{2.5}{12}{Local Backpropagation}{figure.caption.46}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Batch Gradient Descent\relax }}{12}{algocf.50}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Stochastic Gradient Descent\relax }}{12}{algocf.52}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Mini-batch Gradient Descent\relax }}{13}{algocf.54}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Parallelism in Deep Neural Networks}{13}{section.55}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Data Parallelism}{13}{subsection.56}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Model Parallelism}{13}{subsection.57}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Pipeline Parallelism}{14}{subsection.58}}
-\@setckpt{Chapters/Chapter2}{
-\setcounter{page}{15}
-\setcounter{equation}{3}
+\newlabel{Chapter5}{{5}{31}{Intel OpenCL SDK Primer}{chapter.139}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Development Workflow}{31}{section.140}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}simple example of abstracting API specifics}{31}{lstlisting.141}}
+\newlabel{code:abstraction}{{5.1}{31}{Development Workflow}{lstnumber.148}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Single Work-item vs ND-Range Kernel}{32}{section.149}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Inferring Shift-Registers}{32}{section.150}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}Shift Register Inference}{33}{lstlisting.151}}
+\newlabel{code:shift}{{5.3}{33}{Inferring Shift-Registers}{lstnumber.171}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Reconfiguring the FPGA}{33}{section.172}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Loops}{33}{section.173}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}nested loops, src\cite {2018combined}}{34}{lstlisting.174}}
+\newlabel{code:loopa}{{5.5}{34}{Loops}{lstnumber.179}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.4}collapsed loops, src\cite {2018combined}}{34}{lstlisting.180}}
+\newlabel{code:loopb}{{5.5}{34}{Loops}{lstnumber.189}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Relieving Loop-Carried Memory Dependencies}{34}{section.190}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.5}Loop-carried dependencies}{35}{lstlisting.191}}
+\newlabel{code:dep}{{5.6}{35}{Relieving Loop-Carried Memory Dependencies}{lstnumber.204}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.6}Dependencies are transferred to a local register}{35}{lstlisting.205}}
+\newlabel{code:nondep}{{5.6}{35}{Relieving Loop-Carried Memory Dependencies}{lstnumber.222}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.7}Dependency transferred to a local array}{36}{lstlisting.223}}
+\newlabel{code:nondeptwo}{{5.6}{36}{Relieving Loop-Carried Memory Dependencies}{lstnumber.248}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Using Multiple Queues}{36}{section.249}}
+\@setckpt{Chapters/Chapter5}{
+\setcounter{page}{37}
+\setcounter{equation}{0}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{1}
+\setcounter{footnote}{0}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
-\setcounter{chapter}{2}
-\setcounter{section}{4}
-\setcounter{subsection}{3}
+\setcounter{chapter}{5}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{5}
-\setcounter{table}{1}
+\setcounter{figure}{0}
+\setcounter{table}{0}
 \setcounter{LT@tables}{0}
 \setcounter{LT@chunks}{0}
 \setcounter{ContinuedFloat}{0}
@@ -65,7 +57,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{76}
+\setcounter{instcount}{113}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -169,10 +161,10 @@
 \setcounter{algocfline}{3}
 \setcounter{algocfproc}{3}
 \setcounter{algocf}{3}
-\setcounter{lstnumber}{1}
+\setcounter{lstnumber}{26}
 \setcounter{Item}{0}
-\setcounter{Hfootnote}{6}
-\setcounter{bookmark@seq@number}{33}
-\setcounter{lstlisting}{0}
-\setcounter{section@level}{2}
+\setcounter{Hfootnote}{10}
+\setcounter{bookmark@seq@number}{61}
+\setcounter{lstlisting}{7}
+\setcounter{section@level}{1}
 }
