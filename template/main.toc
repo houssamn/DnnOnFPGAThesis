@@ -3,63 +3,65 @@
 \contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}
 \contentsline {chapter}{Abstract}{v}{section*.2}
 \contentsline {chapter}{Acknowledgements}{vii}{section*.3}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}
-\contentsline {section}{\numberline {1.1}Deep Learning and Applications}{1}{section.8}
-\contentsline {subsection}{\numberline {1.1.1}History}{1}{subsection.9}
-\contentsline {subsection}{\numberline {1.1.2}Learning in Artificial Neural Networks}{1}{subsection.10}
-\contentsline {subsection}{\numberline {1.1.3}Deep Learning}{2}{subsection.11}
-\contentsline {section}{\numberline {1.2}Modern FPGAs}{2}{section.12}
-\contentsline {subsection}{\numberline {1.2.1}The Case for FPGAs}{2}{subsection.13}
-\contentsline {subsection}{\numberline {1.2.2}FPGAs vs GPUs}{2}{subsection.15}
-\contentsline {section}{\numberline {1.3}High-Level Synthesis and OpenCL}{3}{section.18}
-\contentsline {subsection}{\numberline {1.3.1}FPGA Workflow}{3}{subsection.19}
-\contentsline {subsection}{\numberline {1.3.2}High-Level Synthesis}{4}{subsection.21}
-\contentsline {subsection}{\numberline {1.3.3}Xilinx and Intel}{4}{subsection.22}
-\contentsline {subsection}{\numberline {1.3.4}OpenCL for FPGAs}{4}{subsection.23}
-\contentsline {section}{\numberline {1.4}Related Work}{5}{section.24}
-\contentsline {section}{\numberline {1.5}Motivation}{6}{section.26}
-\contentsline {section}{\numberline {1.6}Outline of Next Sections}{6}{section.27}
-\contentsline {chapter}{\numberline {2}Deep Neural Networks and Parallelism}{7}{chapter.28}
-\contentsline {section}{\numberline {2.1}Deep Learning Applications}{7}{section.29}
-\contentsline {section}{\numberline {2.2}Convolutional Neural Networks}{7}{section.30}
-\contentsline {subsection}{\numberline {2.2.1}Case Study : LeNet-5}{8}{subsection.31}
-\contentsline {subsubsection}{Architecture}{8}{section*.32}
-\contentsline {subsection}{\numberline {2.2.2}Modern Architectures}{10}{subsection.35}
-\contentsline {subsubsection}{AlexNet}{10}{section*.36}
-\contentsline {subsubsection}{ResNet}{10}{section*.38}
-\contentsline {section}{\numberline {2.3}Training and Backpropagation}{11}{section.40}
-\contentsline {subsubsection}{Gradient Descent}{11}{section*.44}
-\contentsline {section}{\numberline {2.4}Parallelism in Deep Neural Networks}{13}{section.55}
-\contentsline {subsection}{\numberline {2.4.1}Data Parallelism}{13}{subsection.56}
-\contentsline {subsection}{\numberline {2.4.2}Model Parallelism}{13}{subsection.57}
-\contentsline {subsection}{\numberline {2.4.3}Pipeline Parallelism}{14}{subsection.58}
-\contentsline {chapter}{\numberline {3}Hardware Implementation}{15}{chapter.59}
-\contentsline {section}{\numberline {3.1}LeNet Pilot}{15}{section.60}
-\contentsline {section}{\numberline {3.2}Layer Implementations}{16}{section.62}
-\contentsline {subsection}{\numberline {3.2.1}Convolution Layer}{16}{subsection.63}
-\contentsline {subsubsection}{Simple Implementation with Unrolling}{16}{section*.65}
-\contentsline {subsubsection}{Sliding Buffer Implementation}{17}{section*.105}
-\contentsline {subsubsection}{Row-stationary Implementation}{18}{section*.108}
-\contentsline {subsubsection}{Other Implementations}{19}{section*.111}
-\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{20}{subsection.112}
-\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{21}{subsection.114}
-\contentsline {subsection}{\numberline {3.2.4}Softmax}{21}{subsection.115}
-\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{21}{subsection.117}
-\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{23}{section.121}
-\contentsline {section}{\numberline {3.4}Integration with Deep500}{25}{section.125}
-\contentsline {chapter}{\numberline {4}Experiments and Results}{27}{chapter.129}
-\contentsline {section}{\numberline {4.1}Convolution Implementations}{27}{section.130}
-\contentsline {subsection}{\numberline {4.1.1}Part I : Simple Example}{27}{subsection.132}
-\contentsline {subsection}{\numberline {4.1.2}Part II : Performance in a Real-Case}{28}{subsection.135}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.5}
+\contentsline {section}{\numberline {1.1}Deep Learning and Applications}{1}{section.6}
+\contentsline {subsection}{\numberline {1.1.1}History}{1}{subsection.7}
+\contentsline {subsection}{\numberline {1.1.2}Learning in Artificial Neural Networks}{1}{subsection.8}
+\contentsline {subsection}{\numberline {1.1.3}Deep Learning}{2}{subsection.9}
+\contentsline {section}{\numberline {1.2}Modern FPGAs}{2}{section.10}
+\contentsline {subsection}{\numberline {1.2.1}The Case for FPGAs}{2}{subsection.11}
+\contentsline {subsection}{\numberline {1.2.2}FPGAs vs GPUs}{2}{subsection.13}
+\contentsline {section}{\numberline {1.3}High-Level Synthesis and OpenCL}{3}{section.16}
+\contentsline {subsection}{\numberline {1.3.1}FPGA Workflow}{3}{subsection.17}
+\contentsline {subsection}{\numberline {1.3.2}High-Level Synthesis}{4}{subsection.19}
+\contentsline {subsection}{\numberline {1.3.3}Xilinx and Intel}{4}{subsection.20}
+\contentsline {subsection}{\numberline {1.3.4}OpenCL for FPGAs}{4}{subsection.21}
+\contentsline {section}{\numberline {1.4}Related Work}{5}{section.22}
+\contentsline {section}{\numberline {1.5}Motivation}{6}{section.24}
+\contentsline {section}{\numberline {1.6}Outline of Next Sections}{6}{section.25}
+\contentsline {chapter}{\numberline {2}Deep Neural Networks and Parallelism}{7}{chapter.26}
+\contentsline {section}{\numberline {2.1}Deep Learning Applications}{7}{section.27}
+\contentsline {section}{\numberline {2.2}Convolutional Neural Networks}{7}{section.28}
+\contentsline {subsection}{\numberline {2.2.1}Case Study : LeNet-5}{8}{subsection.29}
+\contentsline {subsubsection}{Architecture}{8}{section*.30}
+\contentsline {subsection}{\numberline {2.2.2}Modern Architectures}{10}{subsection.33}
+\contentsline {subsubsection}{AlexNet}{10}{section*.34}
+\contentsline {subsubsection}{ResNet}{10}{section*.36}
+\contentsline {section}{\numberline {2.3}Training and Backpropagation}{11}{section.38}
+\contentsline {subsubsection}{Gradient Descent}{11}{section*.42}
+\contentsline {section}{\numberline {2.4}Parallelism in Deep Neural Networks}{13}{section.53}
+\contentsline {subsection}{\numberline {2.4.1}Data Parallelism}{13}{subsection.54}
+\contentsline {subsection}{\numberline {2.4.2}Model Parallelism}{13}{subsection.55}
+\contentsline {subsection}{\numberline {2.4.3}Pipeline Parallelism}{14}{subsection.56}
+\contentsline {chapter}{\numberline {3}Hardware Implementation}{15}{chapter.57}
+\contentsline {section}{\numberline {3.1}LeNet Pilot}{15}{section.58}
+\contentsline {section}{\numberline {3.2}Layer Implementations}{16}{section.60}
+\contentsline {subsection}{\numberline {3.2.1}Convolution Layer}{16}{subsection.61}
+\contentsline {subsubsection}{Simple Implementation with Unrolling}{16}{section*.63}
+\contentsline {subsubsection}{Sliding Buffer Implementation}{17}{section*.103}
+\contentsline {subsubsection}{Row-stationary Implementation}{18}{section*.106}
+\contentsline {subsubsection}{Other Implementations}{19}{section*.109}
+\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{20}{subsection.110}
+\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{21}{subsection.112}
+\contentsline {subsection}{\numberline {3.2.4}Softmax}{21}{subsection.113}
+\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{21}{subsection.115}
+\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{23}{section.119}
+\contentsline {section}{\numberline {3.4}Integration with Deep500}{25}{section.123}
+\contentsline {chapter}{\numberline {4}Experiments and Results}{27}{chapter.127}
+\contentsline {section}{\numberline {4.1}Convolution Implementations}{27}{section.128}
+\contentsline {subsection}{\numberline {4.1.1}Part I : Simple Example}{27}{subsection.130}
+\contentsline {subsection}{\numberline {4.1.2}Part II : Performance in a Real-Case}{28}{subsection.133}
 \contentsline {section}{\numberline {4.2}Pipelined vs. Non-Pipelined Inference}{29}{section.137}
-\contentsline {section}{\numberline {4.3}Training LeNet}{29}{section.138}
-\contentsline {chapter}{\numberline {5}Intel OpenCL SDK Primer}{31}{chapter.139}
-\contentsline {section}{\numberline {5.1}Development Workflow}{31}{section.140}
-\contentsline {section}{\numberline {5.2}Single Work-item vs ND-Range Kernel}{32}{section.149}
-\contentsline {section}{\numberline {5.3}Inferring Shift-Registers}{32}{section.150}
-\contentsline {section}{\numberline {5.4}Reconfiguring the FPGA}{33}{section.172}
-\contentsline {section}{\numberline {5.5}Loops}{33}{section.173}
-\contentsline {section}{\numberline {5.6}Relieving Loop-Carried Memory Dependencies}{34}{section.190}
-\contentsline {section}{\numberline {5.7}Using Multiple Queues}{36}{section.249}
-\contentsline {chapter}{\numberline {6}Conclusion}{37}{chapter.250}
-\contentsline {chapter}{Bibliography}{39}{appendix*.251}
+\contentsline {section}{\numberline {4.3}Training LeNet}{31}{section.145}
+\contentsline {chapter}{\numberline {5}Intel OpenCL SDK Primer}{33}{chapter.146}
+\contentsline {section}{\numberline {5.1}Development Workflow}{33}{section.147}
+\contentsline {section}{\numberline {5.2}Single Work-item vs ND-Range Kernel}{34}{section.156}
+\contentsline {section}{\numberline {5.3}Inferring Shift-Registers}{34}{section.157}
+\contentsline {section}{\numberline {5.4}Reconfiguring the FPGA}{35}{section.179}
+\contentsline {section}{\numberline {5.5}Loops}{35}{section.180}
+\contentsline {section}{\numberline {5.6}Loop-Carried Memory Dependencies}{36}{section.197}
+\contentsline {section}{\numberline {5.7}Using Multiple Queues}{38}{section.256}
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.257}
+\contentsline {section}{\numberline {6.1}Abstract}{39}{section.258}
+\contentsline {section}{\numberline {6.2}Conclusion}{39}{section.259}
+\contentsline {chapter}{Bibliography}{41}{appendix*.260}

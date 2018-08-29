@@ -1501,6 +1501,15 @@
     \field{year}{2017}
   \endentry
 
+  \entry{onnx}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{howpublished}{\url{https://github.com/onnx/onnx}}
+    \field{note}{Accessed: 2018-08-22}
+    \field{title}{ONNX}
+  \endentry
+
   \entry{pao1989adaptive}{article}{}
     \name{author}{1}{}{%
       {{hash=PY}{%
@@ -2083,6 +2092,75 @@
     \field{sortinit}{X}
     \field{sortinithash}{X}
     \field{title}{Reference Guide}
+  \endentry
+
+  \entry{Zhang2015}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=ZC}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Guangyu},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Yijin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=XB}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Bingjun},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cong},
+         familyi={C\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{acceleration, convolutional neural network, fpga, roofline model}
+    \strng{namehash}{ZC+1}
+    \strng{fullhash}{ZCLPSGGYXBCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 2015 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/2684746.2689060
+    \endverb
+    \field{isbn}{978-1-4503-3315-3}
+    \field{pages}{161\bibrangedash 170}
+    \field{series}{FPGA '15}
+    \field{title}{Optimizing FPGA-based Accelerator Design for Deep
+  Convolutional Neural Networks}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2684746.2689060
+    \endverb
+    \list{location}{1}{%
+      {Monterey, California, USA}%
+    }
+    \field{year}{2015}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{2018combined}{inproceedings}{}
