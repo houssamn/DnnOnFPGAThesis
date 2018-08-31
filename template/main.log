@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 AUG 2018 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  31 AUG 2018 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,8 +173,8 @@ Package: xparse 2018/02/21 L3 Experimental document command parser
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count170
 \c@chapter=\count171
@@ -1393,6 +1393,40 @@ Package scrhack Info: redefining \lstlistoflistings on input line 137.
 )
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count429
+\calc@Bcount=\count430
+\calc@Adimen=\dimen199
+\calc@Bdimen=\dimen256
+\calc@Askip=\skip105
+\calc@Bskip=\skip106
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count431
+\calc@Cskip=\skip107
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+))
+\AM@pagewidth=\dimen257
+\AM@pageheight=\dimen258
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box67
+\AM@global@opts=\toks27
+\AM@toc@title=\toks28
+\c@AM@survey=\count432
+\AM@templatesizebox=\box68
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -1424,23 +1458,23 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen199
-\Hy@linkcounter=\count429
-\Hy@pagecounter=\count430
+\@linkdim=\dimen259
+\Hy@linkcounter=\count433
+\Hy@pagecounter=\count434
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count431
+\Hy@SavedSpaceFactor=\count435
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1452,12 +1486,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count432
+\c@Hy@tempcnt=\count436
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen256
-\Fld@menulength=\count433
-\Field@Width=\dimen257
-\Fld@charsize=\dimen258
+\XeTeXLinkMargin=\dimen260
+\Fld@menulength=\count437
+\Field@Width=\dimen261
+\Fld@charsize=\dimen262
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -1467,38 +1501,38 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count434
-\c@Item=\count435
-\c@Hfootnote=\count436
+\Hy@abspage=\count438
+\c@Item=\count439
+\c@Hfootnote=\count440
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 123.
+(scrhack)             need that hack, on input line 126.
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count437
-\c@bookmark@seq@number=\count438
+\Fld@listcount=\count441
+\c@bookmark@seq@number=\count442
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip105
+\Hy@SectionHShift=\skip108
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 123.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 123.
-Package hyperref Info: Option `colorlinks' set `true' on input line 123.
-Package hyperref Info: Option `unicode' set `true' on input line 123.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 126.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 126.
+Package hyperref Info: Option `colorlinks' set `true' on input line 126.
+Package hyperref Info: Option `unicode' set `true' on input line 126.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 123.
+Package hyperref Info: Option `breaklinks' set `true' on input line 126.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1513,23 +1547,23 @@ Package csquotes Info: ... found 'babel' package.
 (./Chapters/Chapter6.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 123.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 126.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1618,17 +1652,17 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count439
-\scratchdimen=\dimen259
-\scratchbox=\box67
-\nofMPsegments=\count440
-\nofMParguments=\count441
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count442
-\MPscratchDim=\dimen260
-\MPnumerator=\count443
-\makeMPintoPDFobject=\count444
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count443
+\scratchdimen=\dimen263
+\scratchbox=\box69
+\nofMPsegments=\count444
+\nofMParguments=\count445
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count446
+\MPscratchDim=\dimen264
+\MPnumerator=\count447
+\makeMPintoPDFobject=\count448
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1665,18 +1699,18 @@ Package caption Info: End \AtBeginDocument code.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=404.02908pt
-* \textheight=693.49821pt
+* \textheight=689.15318pt
 * \oddsidemargin=13.08826pt
 * \evensidemargin=35.85056pt
 * \topmargin=-29.59087pt
-* \headheight=18.85364pt
+* \headheight=20.66162pt
 * \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=116.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1687,14 +1721,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 123.
-Package scrbase Info: activating english \abbrevname on input line 123.
-Package scrbase Info: activating english \byname on input line 123.
-Package scrbase Info: activating english \acknowledgementname on input line 123
+(scrlayer)             \begin{document} on input line 126.
+Package scrbase Info: activating english \abbrevname on input line 126.
+Package scrbase Info: activating english \byname on input line 126.
+Package scrbase Info: activating english \acknowledgementname on input line 126
 .
-Package scrbase Info: activating english \authorshipname on input line 123.
-Package scrbase Info: activating english \constantsname on input line 123.
-Package scrbase Info: activating english \symbolsname on input line 123.
+Package scrbase Info: activating english \authorshipname on input line 126.
+Package scrbase Info: activating english \constantsname on input line 126.
+Package scrbase Info: activating english \symbolsname on input line 126.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1712,125 +1746,149 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'location' + 'address'.
 
 )
-Package biblatex Info: Reference section=0 on input line 123.
-Package biblatex Info: Reference segment=0 on input line 123.
-\c@lstlisting=\count445
-Package scrhack Info: undefining \float@addtolists on input line 123.
-\AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring ON on input line 123.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package biblatex Info: Reference section=0 on input line 126.
+Package biblatex Info: Reference segment=0 on input line 126.
+\c@lstlisting=\count449
+Package scrhack Info: undefining \float@addtolists on input line 126.
+\AtBeginShipoutBox=\box70
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package scrhack Info: loading lscape hack on input line 76.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/lscape.hak
+File: lscape.hak 2018/03/30 v3.25 KOMA-Script package (hacking package lscape)
+Package scrhack Info: \landscape patched to make \textheight change optional on
+ input line 90.
+\scrh@LT@textheight=\skip109
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package hyperref Info: Link coloring ON on input line 126.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count446
+\c@section@level=\count450
 )
-LaTeX Info: Redefining \ref on input line 123.
-LaTeX Info: Redefining \pageref on input line 123.
-LaTeX Info: Redefining \nameref on input line 123.
+LaTeX Info: Redefining \ref on input line 126.
+LaTeX Info: Redefining \pageref on input line 126.
+LaTeX Info: Redefining \nameref on input line 126.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 123.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 126.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 123
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 126
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 123
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 126
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 123
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 126
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 123
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 126
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 1: section
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 141.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 144.
 [1
 
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2
+<declaration.pdf, id=276, 597.432pt x 845.07718pt>
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf>
+Package pdftex.def Info: declaration.pdf  used on input line 184.
+(pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf>
+Package pdftex.def Info: declaration.pdf  used on input line 184.
+(pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
+<declaration.pdf, id=279, page=1, 597.432pt x 845.07718pt>
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf, page 1>
+Package pdftex.def Info: declaration.pdf , page1 used on input line 184.
+(pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf, page 1>
+Package pdftex.def Info: declaration.pdf , page1 used on input line 184.
+(pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf, page 1>
+Package pdftex.def Info: declaration.pdf , page1 used on input line 184.
+(pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf, page 1>
+Package pdftex.def Info: declaration.pdf , page1 used on input line 184.
+(pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
+File: declaration.pdf Graphic file (type pdf)
+<use declaration.pdf, page 1>
+Package pdftex.def Info: declaration.pdf , page1 used on input line 184.
+(pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 
-]
---------------------
- Declaration of Authorship
---------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 181.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 181.
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-1: section
-[3] [4
-
-]
+[2 <./declaration.pdf, page is rotated 90 degrees>]
 --------------------
  Abstract
 --------------------
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 202.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 191.
 1: section
-[5
+[3
 
-] [6
+] [4
 
 ]
 --------------------
  Acknowledgements
 --------------------
 1: section
-[7] [8
+[5] [6
 
-]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 220.
- (./main.toc
+] (./main.toc
 1: section
-[9])
+[7])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [10]
+ [8]
 1: section
 \openout2 = `Chapters/Chapter1.aux'.
 
 (./Chapters/Chapter1.tex
 Chapter 1.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 20.
 1: section
 [1
@@ -1838,171 +1896,203 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 
 ]
+Overfull \hbox (4.45871pt too wide) in paragraph at lines 27--28
+\T1/ppl/m/n/12 mer-ous im-prove-ments in com-puter hard-ware and ar-chi-tec-tur
+e, sci-en-tists were
+ []
+
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 34.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[][][][][]$\T1/cmtt/m/n/9 https : / / globenewswire . com / news-[]release / 20
-17 / 11 / 29 / 1210234 / 0 / en /
+[][][][][]$\T1/cmtt/m/n/10 https : / / globenewswire . com / news-[]release / 2
+017 / 11 / 29 / 1210234 / 0 / en /
  []
 
 
-Overfull \hbox (14.44556pt too wide) in paragraph at lines 34--34
-\T1/cmtt/m/n/9 Global-[]Field-[]Programmable-[]Gate-[]Array-[]FPGA-[]Market-[]t
-o-[]Reach-[]USD-[]12-[]989-[]1-[]million-[]by-[]2023 .
+Overfull \hbox (60.1094pt too wide) in paragraph at lines 34--34
+\T1/cmtt/m/n/10 Global-[]Field-[]Programmable-[]Gate-[]Array-[]FPGA-[]Market-[]
+to-[]Reach-[]USD-[]12-[]989-[]1-[]million-[]by-[]2023 .
  []
 
 
-Overfull \hbox (1.52635pt too wide) in paragraph at lines 39--39
-[][][][][]$\T1/cmtt/m/n/9 https : / / www . microsoft . com / en-[]us / researc
-h / blog / microsoft-[]unveils-[]project-[]brainwave/$[][]
+Overfull \hbox (2.45168pt too wide) in paragraph at lines 34--36
+\T1/ppl/m/n/12 com-pound an-nual growth rate of 9.0% [][][][][]. The de-mand fo
+r FP-GAs was sparked
+ []
+
+
+Overfull \hbox (46.36584pt too wide) in paragraph at lines 39--39
+[][][][][]$\T1/cmtt/m/n/10 https : / / www . microsoft . com / en-[]us / resear
+ch / blog / microsoft-[]unveils-[]project-[]brainwave/$[][]
  []
 
 [2]
-Overfull \hbox (2.16707pt too wide) in paragraph at lines 48--49
-\T1/ppl/m/n/10.95 by drag-ging and drop-ping boxes. The lat-ter, how-ever, does
-n't scale for larger projects
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[][][][][]$\T1/cmtt/m/n/10 https : / / www . intel . com / content / www / us /
+ en / fpga / devices . html$[][] \T1/ppl/m/n/10 Last Ac-cessed
  []
 
-[3] [4] [5]) [6]
+
+Overfull \hbox (1.30214pt too wide) in paragraph at lines 48--49
+\T1/ppl/m/n/12 com-mer-cial ap-pli-ca-tions is the steep learn-ing curve and te
+ch-ni-cal back-ground
+ []
+
+[3] [4]
+Overfull \hbox (5.41841pt too wide) in paragraph at lines 58--59
+\T1/ppl/m/n/12 platform par-al-lel pro-gram-ming that is a sub-set of the C sta
+n-dard [[][]43[][]]. OpenCL
+ []
+
+
+Overfull \hbox (1.49419pt too wide) in paragraph at lines 64--65
+\T1/ppl/m/n/12 power of pipelin-ing neu-ral net-work lay-ers to lower the over-
+all mem-ory band-
+ []
+
+[5] [6]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 83.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
+
+Overfull \hbox (2.84978pt too wide) in paragraph at lines 91--92
+[]\T1/ppl/m/n/12 Chapter 6 con-tains the con-clud-ing re-marks and fu-ture di-r
+ec-tion of work. 
+ []
+
+) [7]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex
-Chapter 2.
-1: section
-[7
+ (./Chapters/Chapter2.tex [8
 
 
 
 ]
-<Figures/lenet.png, id=512, 1001.7425pt x 303.1325pt>
+Chapter 2.
+1: section
+[9]
+<Figures/lenet.png, id=530, 1001.7425pt x 303.1325pt>
 File: Figures/lenet.png Graphic file (type png)
 <use Figures/lenet.png>
 Package pdftex.def Info: Figures/lenet.png  used on input line 24.
 (pdftex.def)             Requested size: 404.02908pt x 122.26381pt.
- [8 <./Figures/lenet.png>]
-<Figures/connections.png, id=524, 536.0025pt x 172.645pt>
-File: Figures/connections.png Graphic file (type png)
-<use Figures/connections.png>
-Package pdftex.def Info: Figures/connections.png  used on input line 36.
-(pdftex.def)             Requested size: 262.61642pt x 84.58624pt.
-<Figures/alexnet.png, id=529, 1400.23125pt x 473.77pt>
-File: Figures/alexnet.png Graphic file (type png)
-<use Figures/alexnet.png>
-Package pdftex.def Info: Figures/alexnet.png  used on input line 55.
-(pdftex.def)             Requested size: 404.02908pt x 136.703pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <./Figures/connections.png>]
-<Figures/residual.png, id=544, 513.92pt x 217.81375pt>
+[10]
+<Figures/connections.png, id=540, 536.0025pt x 172.645pt>
+File: Figures/connections.png Graphic file (type png)
+<use Figures/connections.png>
+Package pdftex.def Info: Figures/connections.png  used on input line 36.
+(pdftex.def)             Requested size: 262.61642pt x 84.58624pt.
+ [11 <./Figures/lenet.png> <./Figures/connections.png>]
+<Figures/alexnet.png, id=554, 1400.23125pt x 473.77pt>
+File: Figures/alexnet.png Graphic file (type png)
+<use Figures/alexnet.png>
+Package pdftex.def Info: Figures/alexnet.png  used on input line 55.
+(pdftex.def)             Requested size: 404.02908pt x 136.703pt.
+<Figures/residual.png, id=561, 513.92pt x 217.81375pt>
 File: Figures/residual.png Graphic file (type png)
 <use Figures/residual.png>
 Package pdftex.def Info: Figures/residual.png  used on input line 66.
 (pdftex.def)             Requested size: 282.81912pt x 119.8677pt.
- [10 <./Figures/alexnet.png> <./Figures/residual.png>]
+ [12 <./Figures/alexnet.png>] [13 <./Figures/residual.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 101.
 
-<Figures/backprop.png, id=561, 1525.7pt x 498.86375pt>
+<Figures/backprop.png, id=587, 1525.7pt x 498.86375pt>
 File: Figures/backprop.png Graphic file (type png)
 <use Figures/backprop.png>
 Package pdftex.def Info: Figures/backprop.png  used on input line 112.
 (pdftex.def)             Requested size: 363.6237pt x 118.89241pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (126.34636pt too wide) in paragraph at lines 117--117
-[][][][][]$\T1/cmtt/m/n/9 https : / / kratzert . github . io / 2016 / 02 / 12 /
- understanding-[]the-[]gradient-[]flow-[]through-[]the-[]batch-[]normalization-
-[]layer .
+Overfull \hbox (184.83252pt too wide) in paragraph at lines 117--117
+[][][][][]$\T1/cmtt/m/n/10 https : / / kratzert . github . io / 2016 / 02 / 12 
+/ understanding-[]the-[]gradient-[]flow-[]through-[]the-[]batch-[]normalization
+-[]layer .
  []
 
-[11] [12 <./Figures/backprop.png (PNG copy)>] [13]) [14]
+[14 <./Figures/backprop.png (PNG copy)>] [15] [16]) [17]
 \openout2 = `Chapters/Chapter3.aux'.
 
 
-(./Chapters/Chapter3.tex
+(./Chapters/Chapter3.tex [18
+
+
+
+]
 Chapter 3.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 13.
 
 1: section
-[15
-
-
-
-] [16] (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+[19] [20] [21]
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (./code/convPretty.c
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-)
-<Figures/slidingbuffer.png, id=624, 614.295pt x 219.82124pt>
+) [22]
+<Figures/slidingbuffer.png, id=697, 614.295pt x 219.82124pt>
 File: Figures/slidingbuffer.png Graphic file (type png)
 <use Figures/slidingbuffer.png>
 Package pdftex.def Info: Figures/slidingbuffer.png  used on input line 67.
 (pdftex.def)             Requested size: 242.4199pt x 86.7496pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/shiftregister.png, id=627, 854.19125pt x 275.0275pt>
+<Figures/shiftregister.png, id=700, 854.19125pt x 275.0275pt>
 File: Figures/shiftregister.png Graphic file (type png)
 <use Figures/shiftregister.png>
 Package pdftex.def Info: Figures/shiftregister.png  used on input line 75.
 (pdftex.def)             Requested size: 404.02908pt x 130.08546pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[17]
-<Figures/eyeriss.png, id=673, 869.2475pt x 237.88875pt>
+<Figures/eyeriss.png, id=702, 869.2475pt x 237.88875pt>
 File: Figures/eyeriss.png Graphic file (type png)
 <use Figures/eyeriss.png>
 Package pdftex.def Info: Figures/eyeriss.png  used on input line 91.
 (pdftex.def)             Requested size: 404.02908pt x 110.57355pt.
-<Figures/eyeriss2.png, id=676, 648.4225pt x 388.45125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/eyeriss2.png, id=705, 648.4225pt x 388.45125pt>
 File: Figures/eyeriss2.png Graphic file (type png)
 <use Figures/eyeriss2.png>
 Package pdftex.def Info: Figures/eyeriss2.png  used on input line 99.
 (pdftex.def)             Requested size: 242.4199pt x 145.2243pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./Figures/slidingbuffer.png> <./Figures/shiftregister.png> <./Figures/eyer
-iss.png>] [19 <./Figures/eyeriss2.png>]
-<Figures/maxpool.png, id=710, 543.02875pt x 241.90375pt>
+[23 <./Figures/slidingbuffer.png> <./Figures/shiftregister.png>] [24 <./Figures
+/eyeriss.png> <./Figures/eyeriss2.png>]
+<Figures/maxpool.png, id=740, 543.02875pt x 241.90375pt>
 File: Figures/maxpool.png Graphic file (type png)
 <use Figures/maxpool.png>
 Package pdftex.def Info: Figures/maxpool.png  used on input line 124.
 (pdftex.def)             Requested size: 202.01454pt x 89.9902pt.
- [20 <./Figures/maxpool.png>]
-<Figures/comm.png, id=723, 734.745pt x 332.24126pt>
+ [25 <./Figures/maxpool.png>] [26]
+<Figures/comm.png, id=757, 734.745pt x 332.24126pt>
 File: Figures/comm.png Graphic file (type png)
 <use Figures/comm.png>
 Package pdftex.def Info: Figures/comm.png  used on input line 160.
 (pdftex.def)             Requested size: 363.6237pt x 164.42697pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21]
-Overfull \hbox (55.48866pt too wide) in paragraph at lines 169--169
-[][][][][]$\T1/cmtt/m/n/9 https : / / medium . com / usf-[]msds / deep-[]learni
-ng-[]best-[]practices-[]1-[]weight-[]initialization-[]14e5c0295b94$[][]
+[27 <./Figures/comm.png>]
+Overfull \hbox (106.10175pt too wide) in paragraph at lines 169--169
+[][][][][]$\T1/cmtt/m/n/10 https : / / medium . com / usf-[]msds / deep-[]learn
+ing-[]best-[]practices-[]1-[]weight-[]initialization-[]14e5c0295b94$[][]
  []
 
-<Figures/convprop.png, id=734, 695.59875pt x 634.37pt>
+<Figures/convprop.png, id=769, 695.59875pt x 634.37pt>
 File: Figures/convprop.png Graphic file (type png)
 <use Figures/convprop.png>
 Package pdftex.def Info: Figures/convprop.png  used on input line 174.
@@ -2010,48 +2100,56 @@ Package pdftex.def Info: Figures/convprop.png  used on input line 174.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./Figures/comm.png>] [23 <./Figures/convprop.png>]
-<Figures/jinja.png, id=751, 633.36626pt x 395.4775pt>
+[28] [29 <./Figures/convprop.png>]
+<Figures/jinja.png, id=785, 633.36626pt x 395.4775pt>
 File: Figures/jinja.png Graphic file (type png)
 <use Figures/jinja.png>
 Package pdftex.def Info: Figures/jinja.png  used on input line 195.
 (pdftex.def)             Requested size: 363.6237pt x 227.05382pt.
-<Figures/usage.png, id=752, 522.95375pt x 212.795pt>
+<Figures/usage.png, id=786, 522.95375pt x 212.795pt>
 File: Figures/usage.png Graphic file (type png)
 <use Figures/usage.png>
 Package pdftex.def Info: Figures/usage.png  used on input line 203.
 (pdftex.def)             Requested size: 282.81912pt x 115.08292pt.
- [24 <./Figures/jinja.png> <./Figures/usage.png>]
-<Figures/integration.png, id=770, 758.835pt x 443.6575pt>
+ [30 <./Figures/jinja.png> <./Figures/usage.png>]
+<Figures/integration.png, id=804, 758.835pt x 443.6575pt>
 File: Figures/integration.png Graphic file (type png)
 <use Figures/integration.png>
 Package pdftex.def Info: Figures/integration.png  used on input line 218.
 (pdftex.def)             Requested size: 404.02908pt x 236.22049pt.
- [25 <./Figures/integration.png>]) [26]
+ [31 <./Figures/integration.png>]) [32]
 \openout2 = `Chapters/Chapter4.aux'.
 
-
-(./Chapters/Chapter4.tex
+ (./Chapters/Chapter4.tex
 Chapter 4.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 14.
 
-<Figures/profilerow.png, id=788, 330.23375pt x 66.2475pt>
+
+Overfull \hbox (0.71413pt too wide) in paragraph at lines 28--29
+\T1/ppl/m/n/12 In this sec-tion, we com-pare the dif-fer-ent con-vo-lu-tion im-
+ple-men-ta-tions. Those
+ []
+
+<Figures/profilerow.png, id=822, 330.23375pt x 66.2475pt>
 File: Figures/profilerow.png Graphic file (type png)
 <use Figures/profilerow.png>
 Package pdftex.def Info: Figures/profilerow.png  used on input line 32.
 (pdftex.def)             Requested size: 282.81912pt x 56.73721pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 38.
 
 1: section
-[27
+[33
 
 
 
- <./Figures/profilerow.png>]
+]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 59.
@@ -2061,38 +2159,29 @@ Package caption Warning: \label without proper reference on input line 88.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:resultp2' on page 28 undefined on input line 74.
+LaTeX Warning: Reference `tab:resultp2' on page 34 undefined on input line 74.
 
-[28]
+[34 <./Figures/profilerow.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 81.
 
-
-Overfull \hbox (9.78207pt too wide) in paragraph at lines 98--100
-[]\T1/ppl/m/n/10.95 The re-sults are that the pipelined ver-sion is ef-fec-tive
-ly faster than the non-pipelined
- []
-
-[29]
+[35] [36]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 117.
 
-<Figures/pipesingle.png, id=817, 694.595pt x 237.88875pt>
+<Figures/pipesingle.png, id=860, 694.595pt x 237.88875pt>
 File: Figures/pipesingle.png Graphic file (type png)
 <use Figures/pipesingle.png>
 Package pdftex.def Info: Figures/pipesingle.png  used on input line 130.
 (pdftex.def)             Requested size: 343.42719pt x 117.62279pt.
-<Figures/pipebatch.png, id=818, 551.05875pt x 236.885pt>
+<Figures/pipebatch.png, id=861, 551.05875pt x 236.885pt>
 File: Figures/pipebatch.png Graphic file (type png)
 <use Figures/pipebatch.png>
 Package pdftex.def Info: Figures/pipebatch.png  used on input line 138.
 (pdftex.def)             Requested size: 343.42719pt x 147.63347pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/nonpipesingle.png, id=819, 734.745pt x 150.5625pt>
+<Figures/nonpipesingle.png, id=862, 734.745pt x 150.5625pt>
 File: Figures/nonpipesingle.png Graphic file (type png)
 <use Figures/nonpipesingle.png>
 Package pdftex.def Info: Figures/nonpipesingle.png  used on input line 146.
@@ -2100,7 +2189,7 @@ Package pdftex.def Info: Figures/nonpipesingle.png  used on input line 146.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/nonpipebatch.png, id=820, 910.40125pt x 186.6975pt>
+<Figures/nonpipebatch.png, id=863, 910.40125pt x 186.6975pt>
 File: Figures/nonpipebatch.png Graphic file (type png)
 <use Figures/nonpipebatch.png>
 Package pdftex.def Info: Figures/nonpipebatch.png  used on input line 154.
@@ -2108,165 +2197,170 @@ Package pdftex.def Info: Figures/nonpipebatch.png  used on input line 154.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <./Figures/pipesingle.png>]) [31 <./Figures/pipebatch.png> <./Figures/nonpi
-pesingle.png> <./Figures/nonpipebatch.png>]
+[37 <./Figures/pipesingle.png> <./Figures/pipebatch.png>]
+<Figures/fullprop.png, id=872, 1197.47375pt x 148.555pt>
+File: Figures/fullprop.png Graphic file (type png)
+<use Figures/fullprop.png>
+Package pdftex.def Info: Figures/fullprop.png  used on input line 171.
+(pdftex.def)             Requested size: 404.02908pt x 50.12267pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 178.
+
+
+Overfull \hbox (188.14337pt too wide) in paragraph at lines 179--185
+[][]
+ []
+
+[38 <./Figures/nonpipesingle.png> <./Figures/nonpipebatch.png> <./Figures/fullp
+rop.png>]
+Overfull \hbox (10.57864pt too wide) in paragraph at lines 202--203
+\T1/ppl/m/n/12 In this sec-tion we demon-strate a sim-ple neu-ral net-work ac-c
+el-er-a-tor and demon-
+ []
+
+[39]) [40]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [32
-
-
-
-]
+ (./Chapters/Chapter5.tex
 Chapter 5.
-
-LaTeX Warning: Reference `code:abstraction' on page 33 undefined on input line 
-15.
-
-
-Overfull \hbox (1.89854pt too wide) in paragraph at lines 15--16
-[]\T1/ppl/m/n/10.95 To fully en-able this fea-ture we have ab-stracted the Open
-CL specifics us-ing macros
- []
-
 (./code/kernel.c)
-1: section
-[33]
-
-LaTeX Warning: Reference `code:shift' on page 34 undefined on input line 32.
-
-[34] (./code/shiftreg.c)
-
-LaTeX Warning: Reference `code:loopa' on page 35 undefined on input line 46.
-
-
-LaTeX Warning: Reference `code:loopb' on page 35 undefined on input line 46.
-
-(./code/loopa.c) (./code/loopb.c)
-Overfull \hbox (26.16101pt too wide) in paragraph at lines 48--60
-[]$[]$   $[]$ 
- []
-
-[35]
-
-LaTeX Warning: Reference `code:nondep' on page 36 undefined on input line 70.
-
-[36] (./code/dep.c) (./code/nondep.c)
-
-LaTeX Warning: Reference `code:nondeptwo' on page 37 undefined on input line 78
-.
-
-[37] (./code/nondeptwo.c)) [38]
-\openout2 = `Chapters/Chapter6.aux'.
-
- (./Chapters/Chapter6.tex
-Chapter 6.
-1: section
-[39
-
-
-
-]) [40]
-Overfull \hbox (3.2117pt too wide) in paragraph at lines 263--263
-[]\T1/ppl/m/n/10.95 Tal Ben-Nun and Torsten Hoe-fler. ^^P  De-mys-ti-fy-ing Par
--al-lel and Dis-tributed Deep
- []
-
-
-Overfull \hbox (15.0338pt too wide) in paragraph at lines 263--263
-\T1/ppl/m/n/10.95 Learn-ing: An In-Depth Con-cur-rency Anal-y-sis^^Q. In: \T1/p
-pl/m/it/10.95 arXiv preprint arXiv:1802.09941
- []
-
-
-Overfull \hbox (6.50389pt too wide) in paragraph at lines 263--263
-[]\T1/ppl/m/n/10.95 Ronan Col-lobert, Ko-ray Kavukcuoglu, and Clé-ment Fara-bet
-. ^^P  Torch7: A matlab-
- []
-
-
-Overfull \hbox (4.69717pt too wide) in paragraph at lines 263--263
-\T1/ppl/m/n/10.95 In: \T1/ppl/m/it/10.95 High-Level Syn-the-sis: From Al-go-rit
-hm to Dig-i-tal Cir-cuit\T1/ppl/m/n/10.95 . Ed. by Philippe Coussy
+Overfull \hbox (23.14091pt too wide) in paragraph at lines 19--21
+\T1/ppl/m/n/12 In-tel's chan-nel API [[][]22[][]] func-tions like \T1/ppl/m/it/
+12 read_channel_intel() \T1/ppl/m/n/12 and \T1/ppl/m/it/12 write_channel_intel(
+)
  []
 
 1: section
 [41
 
 
+
 ]
-Overfull \hbox (5.9864pt too wide) in paragraph at lines 263--263
-\T1/ppl/m/n/10.95 neu-ral nets and prob-lem so-lu-tions^^Q. In: \T1/ppl/m/it/10
-.95 In-ter-na-tional Jour-nal of Un-cer-tainty, Fuzzi-
+Overfull \hbox (13.7103pt too wide) in paragraph at lines 26--27
+\T1/ppl/m/n/12 Syn-chro-niza-tion in an NDrange pro-gram-ming model will thus r
+e-sult in pipeline
  []
 
-[42]
-Overfull \hbox (14.891pt too wide) in paragraph at lines 263--263
-\T1/ppl/m/n/10.95 from over-fit-ting^^Q. In: \T1/ppl/m/it/10.95 The Jour-nal of
- Ma-chine Learn-ing Re-search \T1/ppl/m/n/10.95 15.1 (2014), pp. 1929^^U
+[42] [43] (./code/shiftreg.c) [44] (./code/loopa.c) (./code/loopb.c)
+Overfull \hbox (27.18488pt too wide) in paragraph at lines 48--60
+[]$[]$   $[]$ 
+ []
+
+[45] [46] (./code/dep.c) (./code/nondep.c) [47] (./code/nondeptwo.c)) [48]
+\openout2 = `Chapters/Chapter6.aux'.
+
+
+(./Chapters/Chapter6.tex
+Chapter 6.
+)
+1: section
+[49
+
+
+
+] [50
+
+
+]
+Overfull \hbox (0.68924pt too wide) in paragraph at lines 268--268
+[]\T1/ppl/m/n/12 Martín Abadi et al. ^^P  Ten-sor-flow: a sys-tem for large-sca
+le ma-chine learn-
  []
 
 
-Overfull \hbox (13.6714pt too wide) in paragraph at lines 263--263
-\T1/ppl/m/n/10.95 source FPGA ac-cel-er-a-tor for con-vo-lu-tion neu-ral net-wo
-rks^^Q. In: \T1/ppl/m/it/10.95 Field Pro-grammable
+Overfull \hbox (0.68924pt too wide) in paragraph at lines 268--268
+[]\T1/ppl/m/n/12 Martín Abadi et al. ^^P  Ten-sor-flow: a sys-tem for large-sca
+le ma-chine learn-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
-[43]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
+
+Overfull \hbox (11.737pt too wide) in paragraph at lines 268--268
+[]\T1/ppl/m/n/12 Tal Ben-Nun and Torsten Hoe-fler. ^^P  De-mys-ti-fy-ing Par-al
+-lel and Dis-tributed
+ []
+
+
+Overfull \hbox (1.04907pt too wide) in paragraph at lines 268--268
+\T1/ppl/m/n/12 squares learn-ing al-go-rithm for ra-dial ba-sis func-tion net-w
+orks^^Q. In: \T1/ppl/m/it/12 IEEE
+ []
+
+1: section
+[51]
+Overfull \hbox (2.79713pt too wide) in paragraph at lines 268--268
+[]\T1/ppl/m/n/12 Yann Le-Cun et al. ^^P  Gradient-based learn-ing ap-plied to d
+oc-u-ment recog-
+ []
+
+[52]
+Overfull \hbox (23.94035pt too wide) in paragraph at lines 268--268
+[]\T1/ppl/m/n/12 Eriko Nurvi-tadhi et al. ^^P  Can fp-gas beat gpus in ac-cel-e
+r-at-ing next-generation
+ []
+
+[53]
+Overfull \hbox (7.56868pt too wide) in paragraph at lines 268--268
+[]\T1/ppl/m/n/12 Peter Wil-son. \T1/ppl/m/it/12 De-sign Recipes for FP-GAs: Us-
+ing Ver-ilog and VHDL\T1/ppl/m/n/12 . Newnes,
+ []
+
+
+Overfull \hbox (39.89253pt too wide) in paragraph at lines 268--268
+\T1/ppl/m/n/12 Deep Con-vo-lu-tional Neu-ral Net-works^^Q. In: \T1/ppl/m/it/12 
+Pro-ceed-ings of the 2015 ACM/SIGDA
+ []
+
+
+Overfull \hbox (18.78493pt too wide) in paragraph at lines 268--268
+\T1/ppl/m/n/12 pu-ta-tion on FP-GAs us-ing OpenCL^^Q. In: \T1/ppl/m/it/12 Pro-c
+eed-ings of the 2018 ACM/SIGDA
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
+[54]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 272.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 380859BB91731A02DC80CF78928C5448;10377.
+(rerunfilecheck)             Checksum: 176C232EDAE2313B294E1A29428DE1B7;10435.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37842 strings out of 492649
- 749698 string characters out of 6129622
- 1161582 words of memory out of 5000000
- 40895 multiletter control sequences out of 15000+600000
- 603896 words of font info for 161 fonts, out of 8000000 for 9000
+ 38578 strings out of 492649
+ 761839 string characters out of 6129622
+ 1175706 words of memory out of 5000000
+ 41588 multiletter control sequences out of 15000+600000
+ 603542 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,21n,82p,10377b,2959s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,20n,82p,10377b,2990s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
 e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/pal
-atino/uplri8a.pfb>
-Output written on main.pdf (53 pages, 2128734 bytes).
+/2018/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/p
+alatino/uplri8a.pfb>
+Output written on main.pdf (62 pages, 2661204 bytes).
 PDF statistics:
- 1144 PDF objects out of 1200 (max. 8388607)
- 1017 compressed objects within 11 object streams
- 366 named destinations out of 1000 (max. 500000)
- 621 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-s/type1/urw/pal
-atino/uplri8a.pfb>
-Output written on main.pdf (53 pages, 2125036 bytes).
-PDF statistics:
- 1088 PDF objects out of 1200 (max. 8388607)
- 962 compressed objects within 10 object streams
- 366 named destinations out of 1000 (max. 500000)
- 621 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1210 PDF objects out of 1440 (max. 8388607)
+ 1068 compressed objects within 11 object streams
+ 378 named destinations out of 1000 (max. 500000)
+ 646 words of extra memory for PDF output out of 10000 (max. 10000000)
 

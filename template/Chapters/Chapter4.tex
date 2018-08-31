@@ -103,7 +103,7 @@ The estimation is further verified by running the pipeline to classify a set of 
 \end{equation}
 
 As for the non-pipelined version, we see in \ref{fig:nonpipesingle} that in the case of inference for a single image,  the total time taken for inference is 21.53 milliseconds. Moreover, the effective time by summing up the individual kernel execution times is much less. The reason for the delay in launching kernels is mainly synchronization constructs by calling \emph{clFinish(queue)} in between kernel launches. Summing up individual kernel times leads to an effective execution time of 5.4 milliseconds. This is still lower than the pipelined implementation. For inference of the batch, the effect of synchronization is minimized and we find that the total time of 11.15 seconds meets the theoretical results \ref{eqn:effect}.
- 
+
 \begin{equation}
 \begin{array}{l}
 
@@ -162,6 +162,47 @@ Implementation               & \textbf{Single Image (Effective)} & \textbf{Batch
 \newpage
 \section{Training LeNet}
 
-<needs some coding, then run it > 
+\subsection{Reconfiguration Time}
+
+We implemented full minibatch backpropagation for the LeNet network described in reference(section). The problem is that the fully optimized kernel implementations for the forward and backward propagation do not fit in a single binary. The problem we had was that the estimated area usage was always within the Arria 10's available resources and even less than 80\% logic utilization. However, the compiler would run out of memory or crash with random error messages during compilation after tens of hours of running. For that we chose to simplify the design and break it up into a binary for forward propagation and a binary for backpropagation. The FPGA would reconfigure when switching between the two modes. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.0\textwidth]{Figures/fullprop}
+\decoRule
+\caption[fullprop]{ Dynamic Profiling results for minibatch on LeNet. }
+\label{fig:fullprop}
+\end{figure}
+
+
+\begin{table}[]
+\begin{tabular}{cccc}
+\textbf{Batch Size} & \textbf{Total Epoch Time} & \textbf{Reconfiguration Time (x2) in sec} & \textbf{Reconfiguration time / Total epoch time} \\
+1                   & 4.3                       & 4.2                                       & 97.6 \%                                          \\
+2048                & 49.1                      & 4.6                                       & 9.3\%                                           
+\end{tabular}
+\label{tab:reconfigure}
+\end{table}
+
+By looking at the figure \ref{fig:fullprop} and after re-running the experiment time for multiple times, we realize that reconfiguration time is long and takes between 2 and 2.5seconds in total. For a small batch size or in the case of a single image, reconfiguration time introduces a large overhead. When working with large batches, the effect is minimized ( as shown in table(reference) ). One iteration in the table consists of kernel reconfiguration ( twice ), forward propagation, and backward propagation with weight updates for the full batch.
+
+In the case of a batch size of 2048, the overhead of reconfiguration is still large ( 9.7\%), however this is more feasible to perform as opposed to a single image. With larger batch sizes, we risk reaching a local minimum when optimizing the loss function as discussed before in ref(section).
+
+\subsubsection{Challenges}
+
+The implementation of LeNet, though simple still required a lot of modifications until we started to see a decrease in the loss function. One of the challenges was the vanishing gradient. We solved this by replacing the ReLU function with the leaky ReLU which improved the training procedure. In back-propagating the error in the fully connected layers, we experimented with gradient clipping which also improved the stability in the weight updates. 
+
+We ran the batch size of 2048 on the FPGA, however it took a long time and we did not get an improvement in accuracy which may be due either to the batch size being too large, or because of some error introduced into the minibatch backpropagation implementation. As the single item is infeasible to run on the FPGA, we used the Intel Emulator and noticed a decrease in the loss function but we did not run it until convergance as the emulator crashes when too many threads are launched and destroyed. 
+
+We do not train the network on the FPGA until convergance as it takes considerably a large time with a single batch. With the large batch we did not see much improvement in the loss function which is most probably due to the large batch size or an error introduced into the implementation by batching. 
+
+
+\section{Simple Classifier}
+
+In this section we demonstrate a simple neural network accelerator and demonstrate its feasibility. Our kernels communicate through global memory. We have three kernels ForwardPropagate, BackwardPropagate, and SoftMax. This can be used for multiclass classification. All of the kernels are compiled into a single binary. We launch it with the configuration below to classify LeNet and we obtain the results below after 20 epochs. Talk about train data/test data and results ( maybe summarize in a table ) 
+
+<conclude the framework works and this is usable>. Also a proof of concept, has low utilization and can fit on smaller boards and could be useful for embedded system applications. 
+
+
 
 %----------------------------------------------------------------------------------------
