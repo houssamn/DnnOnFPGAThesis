@@ -27,7 +27,7 @@ In terms of supporting this, an FPGA has a fixed architecture and cannot invoke 
 
 In case, thread level parallelism is required, and there are no interdependencies, this can be done by wrapping the function in a loop and unrolling over the computation which provides a more efficient implementation in hardware. 
 
-\section{Inferring Shift-Registers}
+\section{Inferring Shift-Registers} \label{shiftinf}
 
 We discussed before how one of the convolution implementations \ref{fig:sliding buffer} relies on a shift-register for storing a sliding window of the input feature map. The trick to make that work is to create a loop that does the shift operation and ( move all items by one position ) and then explicitly specify the \emph{unroll} pragma so that the compiler an perform this optimization. An example is shown in listing \ref{code:shift}.
 
@@ -61,7 +61,7 @@ The general advice for loops is that the less loops the better. When working wit
 This allows the optimizer to better resolve the loop exit conditions and enable it to resolve the condition in one clock cycle. Also the nested structures require additional hardware to preserve state in between iterations. It is also better practice to limit variables to the scope of variables to only where they are used and not in higher level loops and collapsing loops can be a measure against this.
 
 
-\section{Loop-Carried Memory Dependencies}
+\section{Loop-Carried Memory Dependencies} \label{loopdep}
 
 When using OpenCl, it is easy forget that we are not developing a CPU application, so we tend discard unnecessary data structures and we do not consider memory dependencies in between instructions. When programming an FPGA however, it is important to relieve memory dependencies within iterations in order to get an optimal pipelined structure scheduled with an iteration interval $ ii=1 $ . Memory dependencies introduce stalls into the dataflow must wait until the result of a previous iteration is ready before proceeding to the next instruction. 
 

@@ -9,44 +9,45 @@
 \newlabel{lenetpilot}{{3.1}{19}{LeNet Pilot}{section.57}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Layer Implementations}{19}{section.59}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Convolution Layer}{19}{subsection.60}}
+\newlabel{eqn:summat}{{3.1}{19}{Convolution Layer}{equation.61}{}}
 \newlabel{tab:custom-lenet}{{\caption@xref {tab:custom-lenet}{ on input line 24}}{20}{LeNet Pilot}{table.caption.58}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Number of Trainable Parameters for Custom LeNet Implementation\relax }}{20}{table.caption.58}}
 \@writefile{toc}{\contentsline {subsubsection}{Simple Implementation with Unrolling}{20}{section*.62}}
 \newlabel{simpleimpl}{{3.2.1}{20}{Simple Implementation with Unrolling}{section*.62}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.1}code snippet from simple convolution}{22}{lstlisting.64}}
-\@writefile{toc}{\contentsline {subsubsection}{Sliding Buffer Implementation}{22}{section*.102}}
-\newlabel{slidingimpl}{{3.2.1}{22}{Sliding Buffer Implementation}{section*.102}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sliding Buffer}}{23}{figure.caption.103}}
-\newlabel{fig:sliding buffer}{{3.1}{23}{Sliding Buffer}{figure.caption.103}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Shift Register}}{23}{figure.caption.104}}
-\newlabel{fig:shiftregister}{{3.2}{23}{Shift Register}{figure.caption.104}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Row-stationary Implementation}{23}{section*.105}}
-\newlabel{rowimpl}{{3.2.1}{23}{Row-stationary Implementation}{section*.105}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Data Re-use in Eyeriss}}{24}{figure.caption.106}}
-\newlabel{fig:eyeriss}{{3.3}{24}{Data Re-use in Eyeriss}{figure.caption.106}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 2D Spatial Convolution}}{24}{figure.caption.107}}
-\newlabel{fig:eyeriss2}{{3.4}{24}{2D Spatial Convolution}{figure.caption.107}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Other Implementations}{25}{section*.108}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{25}{subsection.109}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces maxpool}}{25}{figure.caption.110}}
-\newlabel{fig:maxpool}{{3.5}{25}{maxpool}{figure.caption.110}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{26}{subsection.111}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.1}code snippet from simple convolution}{21}{lstlisting.64}}
+\@writefile{toc}{\contentsline {subsubsection}{Sliding Buffer Implementation}{21}{section*.102}}
+\newlabel{slidingimpl}{{3.2.1}{21}{Sliding Buffer Implementation}{section*.102}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sliding Buffer}}{22}{figure.caption.103}}
+\newlabel{fig:sliding buffer}{{3.1}{22}{Sliding Buffer}{figure.caption.103}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Shift Register}}{22}{figure.caption.104}}
+\newlabel{fig:shiftregister}{{3.2}{22}{Shift Register}{figure.caption.104}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Row-stationary Implementation}{22}{section*.105}}
+\newlabel{rowimpl}{{3.2.1}{22}{Row-stationary Implementation}{section*.105}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Data Re-use in Eyeriss}}{23}{figure.caption.106}}
+\newlabel{fig:eyeriss}{{3.3}{23}{Data Re-use in Eyeriss}{figure.caption.106}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 2D Spatial Convolution}}{23}{figure.caption.107}}
+\newlabel{fig:eyeriss2}{{3.4}{23}{2D Spatial Convolution}{figure.caption.107}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Other Implementations}{24}{section*.108}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{24}{subsection.109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces maxpool}}{24}{figure.caption.110}}
+\newlabel{fig:maxpool}{{3.5}{24}{maxpool}{figure.caption.110}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{25}{subsection.111}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Softmax}{26}{subsection.112}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{27}{subsection.114}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Types of inter-layer communication}}{27}{figure.caption.115}}
-\newlabel{fig:comm}{{3.6}{27}{Types of inter-layer communication}{figure.caption.115}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Propagation of data in convolution}}{29}{figure.caption.117}}
-\newlabel{fig:conv}{{3.7}{29}{Propagation of data in convolution}{figure.caption.117}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{29}{section.118}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Templating Kernels}}{30}{figure.caption.120}}
-\newlabel{fig:jinja}{{3.8}{30}{Templating Kernels}{figure.caption.120}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Tempate Generator Usage}}{30}{figure.caption.121}}
-\newlabel{fig:usage}{{3.9}{30}{Tempate Generator Usage}{figure.caption.121}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Integration with Deep500}{31}{section.122}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Intergration with Deep500 Diagram}}{31}{figure.caption.125}}
-\newlabel{fig:integration}{{3.10}{31}{Intergration with Deep500 Diagram}{figure.caption.125}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{26}{subsection.114}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Types of inter-layer communication}}{26}{figure.caption.115}}
+\newlabel{fig:comm}{{3.6}{26}{Types of inter-layer communication}{figure.caption.115}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Propagation of data in convolution}}{28}{figure.caption.117}}
+\newlabel{fig:conv}{{3.7}{28}{Propagation of data in convolution}{figure.caption.117}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{28}{section.118}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Templating Kernels}}{29}{figure.caption.120}}
+\newlabel{fig:jinja}{{3.8}{29}{Templating Kernels}{figure.caption.120}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Tempate Generator Usage}}{29}{figure.caption.121}}
+\newlabel{fig:usage}{{3.9}{29}{Tempate Generator Usage}{figure.caption.121}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Integration with Deep500}{30}{section.122}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Intergration with Deep500 Diagram}}{30}{figure.caption.125}}
+\newlabel{fig:integration}{{3.10}{30}{Intergration with Deep500 Diagram}{figure.caption.125}{}}
 \@setckpt{Chapters/Chapter3}{
-\setcounter{page}{33}
+\setcounter{page}{32}
 \setcounter{equation}{3}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -76,7 +77,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{105}
+\setcounter{instcount}{122}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}

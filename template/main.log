@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  31 AUG 2018 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  31 AUG 2018 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1896,13 +1896,8 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-Overfull \hbox (4.45871pt too wide) in paragraph at lines 27--28
-\T1/ppl/m/n/12 mer-ous im-prove-ments in com-puter hard-ware and ar-chi-tec-tur
-e, sci-en-tists were
- []
-
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 34.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
@@ -1943,7 +1938,7 @@ ch-ni-cal back-ground
 [3] [4]
 Overfull \hbox (5.41841pt too wide) in paragraph at lines 58--59
 \T1/ppl/m/n/12 platform par-al-lel pro-gram-ming that is a sub-set of the C sta
-n-dard [[][]43[][]]. OpenCL
+n-dard [[][]45[][]]. OpenCL
  []
 
 
@@ -1976,7 +1971,7 @@ ec-tion of work.
 Chapter 2.
 1: section
 [9]
-<Figures/lenet.png, id=525, 1001.7425pt x 303.1325pt>
+<Figures/lenet.png, id=541, 1001.7425pt x 303.1325pt>
 File: Figures/lenet.png Graphic file (type png)
 <use Figures/lenet.png>
 Package pdftex.def Info: Figures/lenet.png  used on input line 24.
@@ -1986,18 +1981,18 @@ Package pdftex.def Info: Figures/lenet.png  used on input line 24.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10]
-<Figures/connections.png, id=535, 536.0025pt x 172.645pt>
+<Figures/connections.png, id=551, 536.0025pt x 172.645pt>
 File: Figures/connections.png Graphic file (type png)
 <use Figures/connections.png>
 Package pdftex.def Info: Figures/connections.png  used on input line 36.
 (pdftex.def)             Requested size: 262.61642pt x 84.58624pt.
  [11 <./Figures/lenet.png> <./Figures/connections.png>]
-<Figures/alexnet.png, id=549, 1400.23125pt x 473.77pt>
+<Figures/alexnet.png, id=565, 1400.23125pt x 473.77pt>
 File: Figures/alexnet.png Graphic file (type png)
 <use Figures/alexnet.png>
 Package pdftex.def Info: Figures/alexnet.png  used on input line 55.
 (pdftex.def)             Requested size: 404.02908pt x 136.703pt.
-<Figures/residual.png, id=556, 513.92pt x 217.81375pt>
+<Figures/residual.png, id=572, 513.92pt x 217.81375pt>
 File: Figures/residual.png Graphic file (type png)
 <use Figures/residual.png>
 Package pdftex.def Info: Figures/residual.png  used on input line 66.
@@ -2007,7 +2002,7 @@ Package pdftex.def Info: Figures/residual.png  used on input line 66.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 101.
 
-<Figures/backprop.png, id=582, 1525.7pt x 498.86375pt>
+<Figures/backprop.png, id=599, 1525.7pt x 498.86375pt>
 File: Figures/backprop.png Graphic file (type png)
 <use Figures/backprop.png>
 Package pdftex.def Info: Figures/backprop.png  used on input line 112.
@@ -2034,8 +2029,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 13.
 
 1: section
-[19] [20] [21]
-(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+[19] [20] (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -2044,83 +2038,87 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 (./code/convPretty.c
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-) [22]
-<Figures/slidingbuffer.png, id=692, 614.295pt x 219.82124pt>
+) [21]
+<Figures/slidingbuffer.png, id=710, 614.295pt x 219.82124pt>
 File: Figures/slidingbuffer.png Graphic file (type png)
 <use Figures/slidingbuffer.png>
-Package pdftex.def Info: Figures/slidingbuffer.png  used on input line 67.
+Package pdftex.def Info: Figures/slidingbuffer.png  used on input line 66.
 (pdftex.def)             Requested size: 242.4199pt x 86.7496pt.
-<Figures/shiftregister.png, id=695, 854.19125pt x 275.0275pt>
+<Figures/shiftregister.png, id=713, 854.19125pt x 275.0275pt>
 File: Figures/shiftregister.png Graphic file (type png)
 <use Figures/shiftregister.png>
-Package pdftex.def Info: Figures/shiftregister.png  used on input line 75.
+Package pdftex.def Info: Figures/shiftregister.png  used on input line 74.
 (pdftex.def)             Requested size: 404.02908pt x 130.08546pt.
-<Figures/eyeriss.png, id=697, 869.2475pt x 237.88875pt>
+<Figures/eyeriss.png, id=715, 869.2475pt x 237.88875pt>
 File: Figures/eyeriss.png Graphic file (type png)
 <use Figures/eyeriss.png>
-Package pdftex.def Info: Figures/eyeriss.png  used on input line 91.
+Package pdftex.def Info: Figures/eyeriss.png  used on input line 90.
 (pdftex.def)             Requested size: 404.02908pt x 110.57355pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/eyeriss2.png, id=700, 648.4225pt x 388.45125pt>
+<Figures/eyeriss2.png, id=718, 648.4225pt x 388.45125pt>
 File: Figures/eyeriss2.png Graphic file (type png)
 <use Figures/eyeriss2.png>
-Package pdftex.def Info: Figures/eyeriss2.png  used on input line 99.
+Package pdftex.def Info: Figures/eyeriss2.png  used on input line 98.
 (pdftex.def)             Requested size: 242.4199pt x 145.2243pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23 <./Figures/slidingbuffer.png> <./Figures/shiftregister.png>] [24 <./Figures
+[22 <./Figures/slidingbuffer.png> <./Figures/shiftregister.png>] [23 <./Figures
 /eyeriss.png> <./Figures/eyeriss2.png>]
-<Figures/maxpool.png, id=735, 543.02875pt x 241.90375pt>
+<Figures/maxpool.png, id=753, 543.02875pt x 241.90375pt>
 File: Figures/maxpool.png Graphic file (type png)
 <use Figures/maxpool.png>
-Package pdftex.def Info: Figures/maxpool.png  used on input line 124.
+Package pdftex.def Info: Figures/maxpool.png  used on input line 123.
 (pdftex.def)             Requested size: 202.01454pt x 89.9902pt.
- [25 <./Figures/maxpool.png>] [26]
-<Figures/comm.png, id=752, 734.745pt x 332.24126pt>
+ [24 <./Figures/maxpool.png>] [25]
+<Figures/comm.png, id=770, 734.745pt x 332.24126pt>
 File: Figures/comm.png Graphic file (type png)
 <use Figures/comm.png>
-Package pdftex.def Info: Figures/comm.png  used on input line 160.
+Package pdftex.def Info: Figures/comm.png  used on input line 159.
 (pdftex.def)             Requested size: 363.6237pt x 164.42697pt.
 
-[27 <./Figures/comm.png>]
-Overfull \hbox (106.10175pt too wide) in paragraph at lines 169--169
+[26 <./Figures/comm.png>]
+Overfull \hbox (106.10175pt too wide) in paragraph at lines 168--168
 [][][][][]$\T1/cmtt/m/n/10 https : / / medium . com / usf-[]msds / deep-[]learn
 ing-[]best-[]practices-[]1-[]weight-[]initialization-[]14e5c0295b94$[][]
  []
 
-<Figures/convprop.png, id=764, 695.59875pt x 634.37pt>
+<Figures/convprop.png, id=782, 695.59875pt x 634.37pt>
 File: Figures/convprop.png Graphic file (type png)
 <use Figures/convprop.png>
-Package pdftex.def Info: Figures/convprop.png  used on input line 174.
+Package pdftex.def Info: Figures/convprop.png  used on input line 173.
 (pdftex.def)             Requested size: 242.4199pt x 221.07452pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28] [29 <./Figures/convprop.png>]
-<Figures/jinja.png, id=780, 633.36626pt x 395.4775pt>
+[27] [28 <./Figures/convprop.png>]
+<Figures/jinja.png, id=797, 633.36626pt x 395.4775pt>
 File: Figures/jinja.png Graphic file (type png)
 <use Figures/jinja.png>
-Package pdftex.def Info: Figures/jinja.png  used on input line 195.
+Package pdftex.def Info: Figures/jinja.png  used on input line 194.
 (pdftex.def)             Requested size: 363.6237pt x 227.05382pt.
-<Figures/usage.png, id=781, 522.95375pt x 212.795pt>
+<Figures/usage.png, id=798, 522.95375pt x 212.795pt>
 File: Figures/usage.png Graphic file (type png)
 <use Figures/usage.png>
-Package pdftex.def Info: Figures/usage.png  used on input line 203.
+Package pdftex.def Info: Figures/usage.png  used on input line 202.
 (pdftex.def)             Requested size: 282.81912pt x 115.08292pt.
- [30 <./Figures/jinja.png> <./Figures/usage.png>]
-<Figures/integration.png, id=799, 758.835pt x 443.6575pt>
+ [29 <./Figures/jinja.png> <./Figures/usage.png>]
+<Figures/integration.png, id=817, 758.835pt x 443.6575pt>
 File: Figures/integration.png Graphic file (type png)
 <use Figures/integration.png>
-Package pdftex.def Info: Figures/integration.png  used on input line 218.
+Package pdftex.def Info: Figures/integration.png  used on input line 217.
 (pdftex.def)             Requested size: 404.02908pt x 236.22049pt.
- [31 <./Figures/integration.png>]) [32]
+ [30 <./Figures/integration.png>]) [31]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex
+ (./Chapters/Chapter4.tex [32
+
+
+
+]
 Chapter 4.
 
 LaTeX Warning: No positions in optional float specifier.
@@ -2132,7 +2130,7 @@ Overfull \hbox (0.71413pt too wide) in paragraph at lines 28--29
 ple-men-ta-tions. Those
  []
 
-<Figures/profilerow.png, id=817, 330.23375pt x 66.2475pt>
+<Figures/profilerow.png, id=839, 330.23375pt x 66.2475pt>
 File: Figures/profilerow.png Graphic file (type png)
 <use Figures/profilerow.png>
 Package pdftex.def Info: Figures/profilerow.png  used on input line 32.
@@ -2145,11 +2143,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 38.
 
 1: section
-[33
-
-
-
-]
+[33]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 59.
@@ -2171,17 +2165,17 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 117.
 
-<Figures/pipesingle.png, id=855, 694.595pt x 237.88875pt>
+<Figures/pipesingle.png, id=877, 694.595pt x 237.88875pt>
 File: Figures/pipesingle.png Graphic file (type png)
 <use Figures/pipesingle.png>
 Package pdftex.def Info: Figures/pipesingle.png  used on input line 130.
 (pdftex.def)             Requested size: 343.42719pt x 117.62279pt.
-<Figures/pipebatch.png, id=856, 551.05875pt x 236.885pt>
+<Figures/pipebatch.png, id=878, 551.05875pt x 236.885pt>
 File: Figures/pipebatch.png Graphic file (type png)
 <use Figures/pipebatch.png>
 Package pdftex.def Info: Figures/pipebatch.png  used on input line 138.
 (pdftex.def)             Requested size: 343.42719pt x 147.63347pt.
-<Figures/nonpipesingle.png, id=857, 734.745pt x 150.5625pt>
+<Figures/nonpipesingle.png, id=879, 734.745pt x 150.5625pt>
 File: Figures/nonpipesingle.png Graphic file (type png)
 <use Figures/nonpipesingle.png>
 Package pdftex.def Info: Figures/nonpipesingle.png  used on input line 146.
@@ -2189,7 +2183,7 @@ Package pdftex.def Info: Figures/nonpipesingle.png  used on input line 146.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/nonpipebatch.png, id=858, 910.40125pt x 186.6975pt>
+<Figures/nonpipebatch.png, id=880, 910.40125pt x 186.6975pt>
 File: Figures/nonpipebatch.png Graphic file (type png)
 <use Figures/nonpipebatch.png>
 Package pdftex.def Info: Figures/nonpipebatch.png  used on input line 154.
@@ -2198,7 +2192,7 @@ Package pdftex.def Info: Figures/nonpipebatch.png  used on input line 154.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [37 <./Figures/pipesingle.png> <./Figures/pipebatch.png>]
-<Figures/fullprop.png, id=867, 1197.47375pt x 148.555pt>
+<Figures/fullprop.png, id=889, 1197.47375pt x 148.555pt>
 File: Figures/fullprop.png Graphic file (type png)
 <use Figures/fullprop.png>
 Package pdftex.def Info: Figures/fullprop.png  used on input line 171.
@@ -2227,7 +2221,7 @@ el-er-a-tor and demon-
 Chapter 5.
 (./code/kernel.c)
 Overfull \hbox (23.14091pt too wide) in paragraph at lines 19--21
-\T1/ppl/m/n/12 In-tel's chan-nel API [[][]22[][]] func-tions like \T1/ppl/m/it/
+\T1/ppl/m/n/12 In-tel's chan-nel API [[][]23[][]] func-tions like \T1/ppl/m/it/
 12 read_channel_intel() \T1/ppl/m/n/12 and \T1/ppl/m/it/12 write_channel_intel(
 )
  []
@@ -2300,6 +2294,12 @@ Overfull \hbox (23.94035pt too wide) in paragraph at lines 274--274
 r-at-ing next-generation
  []
 
+
+Overfull \hbox (32.59691pt too wide) in paragraph at lines 274--274
+\T1/ppl/m/n/12 net-works for large-scale im-age recog-ni-tion^^Q. In: \T1/ppl/m
+/it/12 arXiv preprint arXiv:1409.1556
+ []
+
 [53]
 Overfull \hbox (7.56868pt too wide) in paragraph at lines 274--274
 []\T1/ppl/m/n/12 Peter Wil-son. \T1/ppl/m/it/12 De-sign Recipes for FP-GAs: Us-
@@ -2337,13 +2337,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38576 strings out of 492649
- 761815 string characters out of 6129622
- 1175706 words of memory out of 5000000
- 41587 multiletter control sequences out of 15000+600000
+ 38585 strings out of 492649
+ 762095 string characters out of 6129622
+ 1178184 words of memory out of 5000000
+ 41594 multiletter control sequences out of 15000+600000
  603542 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,82p,10377b,2990s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,20n,82p,10377b,2991s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -2357,10 +2357,10 @@ ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/p
 alatino/uplri8a.pfb>
-Output written on main.pdf (62 pages, 2661216 bytes).
+Output written on main.pdf (62 pages, 2662322 bytes).
 PDF statistics:
- 1205 PDF objects out of 1440 (max. 8388607)
- 1063 compressed objects within 11 object streams
- 377 named destinations out of 1000 (max. 500000)
+ 1228 PDF objects out of 1440 (max. 8388607)
+ 1086 compressed objects within 11 object streams
+ 379 named destinations out of 1000 (max. 500000)
  638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

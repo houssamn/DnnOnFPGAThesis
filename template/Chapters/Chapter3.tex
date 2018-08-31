@@ -30,9 +30,10 @@ The main contribution in this work is in the form of a framework for the develop
 
 \subsection{Convolution Layer}
 
-The fundamental operation in Convolutional Neural Networks is the convolution operation. This layer takes as input a multidimensional grid and extracts output feature maps by sliding a window of weights. The filter weights and biases are trainable by gradient descent. An output feature map pixel $ \mathit{y_{i}} $ is obtained by passing a filter of size $ K_{h}xK_{w} $ over an input feature $ \mathit{x_{i}} $ with $ \mathit{CH_{in}} $
+The fundamental operation in Convolutional Neural Networks is the convolution operation. This layer takes as input a multidimensional grid and extracts output feature maps by sliding a window of weights. The filter weights and biases are trainable by gradient descent. An output feature map pixel $ \mathit{y_{i}} $ is obtained by passing a filter of size $ K_{h}xK_{w} $ over an input feature $ \mathit{x_{i}} $ with $ \mathit{CH_{in}} $ input channels.
 \begin{equation}
- y_{i} = relu(\sum_{c=0}^{c=CH_{in}} \sum_{h=0}^{h=K_{H}} \sum_{w=0}^{K_{w}} w_{i,c,h,w} * x_{c,h,w}  + bias ) 
+ y_{i} = relu(\sum_{c=0}^{c=CH_{in}} \sum_{h=0}^{h=K_{H}} \sum_{w=0}^{K_{w}} w_{i,c,h,w} * x_{c,h,w}  + bias_i ) 
+\label{eqn:summat}
 \end{equation}
 The nested loop structure lends itself easily for parallelization.  We will discuss three different implementations for this layer and compare tradeoffs that can be used by the user 
 
@@ -42,25 +43,23 @@ With the help of high level synthesis, we can write a C-like implementation and 
 
 \begin{itemize}
 \item
-\textbf{Unroll over filter computation}: Calculating each pixel in the output feature maps requires $ K_h * K_w * CH_{in} $ multiplications. As our filter sizes are small, we can unroll over the filter dimensions. By unrolling we are effectively parallelizing the algorithm by $ \mathit{25x} $ ( since in our case $ K_h = 5, K_w=5 $ ) . However, we choose to unroll over the input channels and the width of the kernel only. We choose input channels as opposed to only the kernel dimensions due to our memory layout because we stripe the input and  output feature maps by channels as the lowest rank dimension. This increases memory performance by performing aligned memory reads. 
+\textbf{Unroll over filter computation}: Calculating each pixel in the output feature maps requires $ K_h * K_w * CH_{in} $ multiplications. As our filter sizes are small, we can unroll over the filter dimensions. By unrolling we are effectively parallelizing the algorithm by $ \mathit{25x} $ ( since in our case $ K_h = 5, K_w=5 $ ) . However, we choose to unroll over the input channels and the width of the kernel only. We choose input channels as opposed to only the kernel dimensions due to our memory layout because we stripe the input and  output feature maps by channels as the lowest rank dimension. This increases memory performance by performing batch aligned memory reads. 
 
 \item
 \textbf{Buffer the coefficients}: During the forward pass, the filter coefficients, will be read multiple times.  For that, we can reduce the amount of memory reads and buffer the coefficients in low-power and fast registers. This uses space on the board but allows us to access coefficients for a relatively cheaper cost.
 \end{itemize}
 
-As the summation inside for the values inside a sliding window introduces memory dependencies, we buffer intermediate results in local registers and then we perform a tree-based addition to sum up the results. We end up with an  optimally pipelined implementation with an iteration index (ii) = 1 and thus the theoretical number of cycles for a convolution is expressed as 
+Summations inside loops, such as in \ref{eqn:summat} can introduce memory dependencies as the result of the next iteration depends on a previous one. Memory dependencies get worse with unrolling factors as the critical path is increased. We carefully transfer the memory dependencies to local memory on the FPGA (discussed in more detail in \ref{loopdep} ) and achieve an ideal iteration index (ii) = 1. Therefore, the theoretical number of cycles for a convolution is expressed as 
 \begin{equation}
 Latency (L)  \approx ii * batch size * Img_h * Img_w * CH_{out} * K_h  \; cycles
 \end{equation}
-
-\newpage
 
 \lstinputlisting[style=CStyle, caption={code snippet from simple convolution}]{code/convPretty.c}
 
 
 \subsubsection{Sliding Buffer Implementation} \label{slidingimpl}
 
-In the simple, we buffered the coefficients in low-cost local registers to avoid having to read the coefficients multiple times from memory. We also notice that when the convolution window slides with a stride of 1 step, there will be also values in the input feature map that are re-used. For that, we implement a sliding window that contain's all previously seen values as long as they can still be useful. Our implementation is similar to what is describe by Zohouri et. al \cite{2018combined}. The shift-register holds the input values and multiple taps allow for accessing the desired values in the sliding window. The intel offline compile performs optimizations like replicating RAM blocks to allow for simulataneous access on the register. For that, only few compiler directives should be specified to make this implementation work. This implementations is also an example of how we can trade local storage to minimize bandwidth. We also carry over the optimization done in the simple implementation.
+In the simple implementation, we buffered the coefficients in low-cost local registers to avoid having to read the coefficients multiple times from memory. We also notice that when the convolution window slides with a stride of 1 step, there will be also values in the input feature map that are re-used. For that, we implement a sliding window that contain's all previously seen values as long as they can still be useful. Our implementation is similar to what is describe by Zohouri et. al \cite{2018combined}. The shift-register holds the input values and multiple taps allow for accessing the desired values in the sliding window. The intel offline compiler performs optimizations like replicating RAM blocks to allow for simulataneous access. For that, only few compiler directives should be specified to make this implementation work \ref{shiftinf}. This implementations is also an example of how we can trade local storage to minimize bandwidth. We also carry over the optimization done in the simple implementation.
 
 \begin{figure}[h]
 \centering

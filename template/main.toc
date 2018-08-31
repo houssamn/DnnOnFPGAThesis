@@ -36,15 +36,15 @@
 \contentsline {section}{\numberline {3.2}Layer Implementations}{19}{section.59}
 \contentsline {subsection}{\numberline {3.2.1}Convolution Layer}{19}{subsection.60}
 \contentsline {subsubsection}{Simple Implementation with Unrolling}{20}{section*.62}
-\contentsline {subsubsection}{Sliding Buffer Implementation}{22}{section*.102}
-\contentsline {subsubsection}{Row-stationary Implementation}{23}{section*.105}
-\contentsline {subsubsection}{Other Implementations}{25}{section*.108}
-\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{25}{subsection.109}
-\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{26}{subsection.111}
+\contentsline {subsubsection}{Sliding Buffer Implementation}{21}{section*.102}
+\contentsline {subsubsection}{Row-stationary Implementation}{22}{section*.105}
+\contentsline {subsubsection}{Other Implementations}{24}{section*.108}
+\contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{24}{subsection.109}
+\contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{25}{subsection.111}
 \contentsline {subsection}{\numberline {3.2.4}Softmax}{26}{subsection.112}
-\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{27}{subsection.114}
-\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{29}{section.118}
-\contentsline {section}{\numberline {3.4}Integration with Deep500}{31}{section.122}
+\contentsline {subsection}{\numberline {3.2.5}Backpropagation}{26}{subsection.114}
+\contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{28}{section.118}
+\contentsline {section}{\numberline {3.4}Integration with Deep500}{30}{section.122}
 \contentsline {chapter}{\numberline {4}Experiments and Results}{33}{chapter.126}
 \contentsline {section}{\numberline {4.1}Convolution Implementations}{33}{section.127}
 \contentsline {subsection}{\numberline {4.1.1}Part I : Simple Example}{33}{subsection.129}

@@ -728,6 +728,39 @@
     \field{year}{2016}
   \endentry
 
+  \entry{fonseca1995overview}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FCM}{%
+         family={Fonseca},
+         familyi={F\bibinitperiod},
+         given={Carlos\bibnamedelima M},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FPJ}{%
+         family={Fleming},
+         familyi={F\bibinitperiod},
+         given={Peter\bibnamedelima J},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{FCMFPJ1}
+    \strng{fullhash}{FCMFPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 16}
+    \field{title}{An overview of evolutionary algorithms in multiobjective
+  optimization}
+    \field{volume}{3}
+    \field{journaltitle}{Evolutionary computation}
+    \field{year}{1995}
+  \endentry
+
   \entry{Gupta2008}{inbook}{}
     \name{author}{2}{}{%
       {{hash=GR}{%
@@ -1689,6 +1722,33 @@
     \field{pages}{1105\bibrangedash 1112}
     \field{title}{Neural network implementation in hardware using FPGAs}
     \field{year}{2006}
+  \endentry
+
+  \entry{simonyan2014very}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKZA1}
+    \strng{fullhash}{SKZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Very deep convolutional networks for large-scale image
+  recognition}
+    \field{journaltitle}{arXiv preprint arXiv:1409.1556}
+    \field{year}{2014}
   \endentry
 
   \entry{dropout}{article}{}
