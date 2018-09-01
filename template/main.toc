@@ -37,7 +37,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Convolution Layer}{19}{subsection.60}
 \contentsline {subsubsection}{Simple Implementation with Unrolling}{20}{section*.62}
 \contentsline {subsubsection}{Sliding Buffer Implementation}{21}{section*.102}
-\contentsline {subsubsection}{Row-stationary Implementation}{22}{section*.105}
+\contentsline {subsubsection}{Row-stationary Implementation}{23}{section*.105}
 \contentsline {subsubsection}{Other Implementations}{24}{section*.108}
 \contentsline {subsection}{\numberline {3.2.2}Maxpool Layer}{24}{subsection.109}
 \contentsline {subsection}{\numberline {3.2.3}Non-Linearities}{25}{subsection.111}
@@ -45,22 +45,22 @@
 \contentsline {subsection}{\numberline {3.2.5}Backpropagation}{26}{subsection.114}
 \contentsline {section}{\numberline {3.3}OpenCL Kernel Template Generator}{28}{section.118}
 \contentsline {section}{\numberline {3.4}Integration with Deep500}{30}{section.122}
-\contentsline {chapter}{\numberline {4}Experiments and Results}{33}{chapter.126}
-\contentsline {section}{\numberline {4.1}Convolution Implementations}{33}{section.127}
-\contentsline {subsection}{\numberline {4.1.1}Part I : Simple Example}{33}{subsection.129}
-\contentsline {subsection}{\numberline {4.1.2}Part II : Performance in a Real-Case}{34}{subsection.132}
-\contentsline {section}{\numberline {4.2}Pipelined vs. Non-Pipelined Inference}{36}{section.136}
-\contentsline {section}{\numberline {4.3}Training LeNet}{38}{section.144}
-\contentsline {subsection}{\numberline {4.3.1}Reconfiguration Time}{38}{subsection.145}
-\contentsline {subsubsection}{Challenges}{39}{section*.148}
-\contentsline {section}{\numberline {4.4}Simple Classifier}{39}{section.149}
-\contentsline {chapter}{\numberline {5}Intel OpenCL SDK Primer}{41}{chapter.150}
-\contentsline {section}{\numberline {5.1}Development Workflow}{41}{section.151}
-\contentsline {section}{\numberline {5.2}Single Work-item vs ND-Range Kernel}{42}{section.160}
-\contentsline {section}{\numberline {5.3}Inferring Shift-Registers}{43}{section.161}
-\contentsline {section}{\numberline {5.4}Reconfiguring the FPGA}{44}{section.183}
-\contentsline {section}{\numberline {5.5}Loops}{45}{section.184}
-\contentsline {section}{\numberline {5.6}Loop-Carried Memory Dependencies}{45}{section.201}
-\contentsline {section}{\numberline {5.7}Using Multiple Queues}{48}{section.260}
-\contentsline {chapter}{\numberline {6}Conclusion}{49}{chapter.261}
-\contentsline {chapter}{Bibliography}{51}{appendix*.262}
+\contentsline {chapter}{\numberline {4}Experiments and Results}{33}{chapter.125}
+\contentsline {section}{\numberline {4.1}Convolution Implementations}{33}{section.126}
+\contentsline {subsection}{\numberline {4.1.1}Part I : Simple Example}{33}{subsection.128}
+\contentsline {subsection}{\numberline {4.1.2}Part II : Performance in a Real-Case}{34}{subsection.131}
+\contentsline {section}{\numberline {4.2}Pipelined vs. Non-Pipelined Inference}{36}{section.135}
+\contentsline {section}{\numberline {4.3}Training LeNet}{38}{section.143}
+\contentsline {subsection}{\numberline {4.3.1}Reconfiguration Time}{38}{subsection.144}
+\contentsline {subsubsection}{Challenges}{39}{section*.147}
+\contentsline {subsection}{\numberline {4.3.2}Simple Classifier}{39}{subsection.149}
+\contentsline {chapter}{\numberline {5}Intel OpenCL SDK Primer}{41}{chapter.151}
+\contentsline {section}{\numberline {5.1}Development Workflow}{41}{section.152}
+\contentsline {section}{\numberline {5.2}Single Work-item vs ND-Range Kernel}{42}{section.161}
+\contentsline {section}{\numberline {5.3}Inferring Shift-Registers}{43}{section.162}
+\contentsline {section}{\numberline {5.4}Reconfiguring the FPGA}{43}{section.184}
+\contentsline {section}{\numberline {5.5}Loops}{44}{section.185}
+\contentsline {section}{\numberline {5.6}Loop-Carried Memory Dependencies}{44}{section.202}
+\contentsline {section}{\numberline {5.7}Using Multiple Queues}{46}{section.261}
+\contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.262}
+\contentsline {chapter}{Bibliography}{49}{appendix*.263}

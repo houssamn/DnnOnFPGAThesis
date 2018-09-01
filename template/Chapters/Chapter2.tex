@@ -71,7 +71,7 @@ The AlexNet \cite{alexnet} model designers won the ImageNet Large-scale Image re
 ResNet \cite{resnet} is one of the modern networks that sacrifices breadth for depth. Training deeper network is harder because of a problem discovered by Hochreiter et al. \cite{hochreiter1998vanishing} of vanishing gradients.  The authors of ResNet augment the network with shortcut connections that act as identity layers and enable training with respect to residuals instead of the original input values. Using this trick it was possible to train deeper networks reaching up to more than 150 layers \cite{resnet}. 
 
 %----------------------------------------------------------------------------------------
-\section{Training and Backpropagation}
+\section{Training and Backpropagation}  \label{graddesc}
 
 The above networks all try to achieve the goal of properly approximating a mapping function between the dataset inputs and the given labels. In the example of Lenet, inputs are normalized 28x28 single channels, and the output of the network is a the most probable digit between 0 and 9 that this image represents. Formally described, given an input domain $\mathit{X}$, an output set of labels $\mathit{Y}$, and a set of candidate functions $\mathit{f : X \rightarrow Y}$ belonging to a hypothesis class $\mathit{H}$, we are trying to minimize the loss of mispredicting the correct class. The loss function can be expressed as :
 \begin{equation}

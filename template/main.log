@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  31 AUG 2018 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 SEP 2018 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1739,19 +1739,14 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Zhang2015':
-(biblatex)                - Can't use 'location' + 'address'.
-
-)
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 126.
 Package biblatex Info: Reference segment=0 on input line 126.
 \c@lstlisting=\count449
 Package scrhack Info: undefining \float@addtolists on input line 126.
 \AtBeginShipoutBox=\box70
- (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
@@ -1938,7 +1933,7 @@ ch-ni-cal back-ground
 [3] [4]
 Overfull \hbox (5.41841pt too wide) in paragraph at lines 58--59
 \T1/ppl/m/n/12 platform par-al-lel pro-gram-ming that is a sub-set of the C sta
-n-dard [[][]45[][]]. OpenCL
+n-dard [[][]46[][]]. OpenCL
  []
 
 
@@ -2039,17 +2034,17 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 ) [21]
-<Figures/slidingbuffer.png, id=710, 614.295pt x 219.82124pt>
+<Figures/slidingbuffer.png, id=711, 614.295pt x 219.82124pt>
 File: Figures/slidingbuffer.png Graphic file (type png)
 <use Figures/slidingbuffer.png>
 Package pdftex.def Info: Figures/slidingbuffer.png  used on input line 66.
 (pdftex.def)             Requested size: 242.4199pt x 86.7496pt.
-<Figures/shiftregister.png, id=713, 854.19125pt x 275.0275pt>
+<Figures/shiftregister.png, id=714, 854.19125pt x 275.0275pt>
 File: Figures/shiftregister.png Graphic file (type png)
 <use Figures/shiftregister.png>
 Package pdftex.def Info: Figures/shiftregister.png  used on input line 74.
 (pdftex.def)             Requested size: 404.02908pt x 130.08546pt.
-<Figures/eyeriss.png, id=715, 869.2475pt x 237.88875pt>
+<Figures/eyeriss.png, id=716, 869.2475pt x 237.88875pt>
 File: Figures/eyeriss.png Graphic file (type png)
 <use Figures/eyeriss.png>
 Package pdftex.def Info: Figures/eyeriss.png  used on input line 90.
@@ -2058,7 +2053,7 @@ Package pdftex.def Info: Figures/eyeriss.png  used on input line 90.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/eyeriss2.png, id=718, 648.4225pt x 388.45125pt>
+<Figures/eyeriss2.png, id=719, 648.4225pt x 388.45125pt>
 File: Figures/eyeriss2.png Graphic file (type png)
 <use Figures/eyeriss2.png>
 Package pdftex.def Info: Figures/eyeriss2.png  used on input line 98.
@@ -2068,13 +2063,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [22 <./Figures/slidingbuffer.png> <./Figures/shiftregister.png>] [23 <./Figures
 /eyeriss.png> <./Figures/eyeriss2.png>]
-<Figures/maxpool.png, id=753, 543.02875pt x 241.90375pt>
+<Figures/maxpool.png, id=755, 543.02875pt x 241.90375pt>
 File: Figures/maxpool.png Graphic file (type png)
 <use Figures/maxpool.png>
 Package pdftex.def Info: Figures/maxpool.png  used on input line 123.
 (pdftex.def)             Requested size: 202.01454pt x 89.9902pt.
  [24 <./Figures/maxpool.png>] [25]
-<Figures/comm.png, id=770, 734.745pt x 332.24126pt>
+<Figures/comm.png, id=772, 734.745pt x 332.24126pt>
 File: Figures/comm.png Graphic file (type png)
 <use Figures/comm.png>
 Package pdftex.def Info: Figures/comm.png  used on input line 159.
@@ -2086,7 +2081,7 @@ Overfull \hbox (106.10175pt too wide) in paragraph at lines 168--168
 ing-[]best-[]practices-[]1-[]weight-[]initialization-[]14e5c0295b94$[][]
  []
 
-<Figures/convprop.png, id=782, 695.59875pt x 634.37pt>
+<Figures/convprop.png, id=784, 695.59875pt x 634.37pt>
 File: Figures/convprop.png Graphic file (type png)
 <use Figures/convprop.png>
 Package pdftex.def Info: Figures/convprop.png  used on input line 173.
@@ -2095,18 +2090,18 @@ Package pdftex.def Info: Figures/convprop.png  used on input line 173.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [27] [28 <./Figures/convprop.png>]
-<Figures/jinja.png, id=797, 633.36626pt x 395.4775pt>
+<Figures/jinja.png, id=799, 633.36626pt x 395.4775pt>
 File: Figures/jinja.png Graphic file (type png)
 <use Figures/jinja.png>
 Package pdftex.def Info: Figures/jinja.png  used on input line 194.
 (pdftex.def)             Requested size: 363.6237pt x 227.05382pt.
-<Figures/usage.png, id=798, 522.95375pt x 212.795pt>
+<Figures/usage.png, id=800, 522.95375pt x 212.795pt>
 File: Figures/usage.png Graphic file (type png)
 <use Figures/usage.png>
 Package pdftex.def Info: Figures/usage.png  used on input line 202.
 (pdftex.def)             Requested size: 282.81912pt x 115.08292pt.
  [29 <./Figures/jinja.png> <./Figures/usage.png>]
-<Figures/integration.png, id=817, 758.835pt x 443.6575pt>
+<Figures/integration.png, id=819, 758.835pt x 443.6575pt>
 File: Figures/integration.png Graphic file (type png)
 <use Figures/integration.png>
 Package pdftex.def Info: Figures/integration.png  used on input line 217.
@@ -2130,7 +2125,7 @@ Overfull \hbox (0.71413pt too wide) in paragraph at lines 28--29
 ple-men-ta-tions. Those
  []
 
-<Figures/profilerow.png, id=839, 330.23375pt x 66.2475pt>
+<Figures/profilerow.png, id=841, 330.23375pt x 66.2475pt>
 File: Figures/profilerow.png Graphic file (type png)
 <use Figures/profilerow.png>
 Package pdftex.def Info: Figures/profilerow.png  used on input line 32.
@@ -2149,70 +2144,80 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 59.
 
 
-Package caption Warning: \label without proper reference on input line 88.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 74.
+
+
+Package caption Warning: \label without proper reference on input line 81.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:resultp2' on page 34 undefined on input line 74.
+LaTeX Warning: Reference `tab:resultptwo' on page 34 undefined on input line 85
+.
 
-[34 <./Figures/profilerow.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 81.
-
-[35] [36]
+[34 <./Figures/profilerow.png>] [35] [36]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 117.
+               Default added (so using `tbp') on input line 125.
 
-<Figures/pipesingle.png, id=877, 694.595pt x 237.88875pt>
+<Figures/pipesingle.png, id=883, 694.595pt x 237.88875pt>
 File: Figures/pipesingle.png Graphic file (type png)
 <use Figures/pipesingle.png>
-Package pdftex.def Info: Figures/pipesingle.png  used on input line 130.
+Package pdftex.def Info: Figures/pipesingle.png  used on input line 138.
 (pdftex.def)             Requested size: 343.42719pt x 117.62279pt.
-<Figures/pipebatch.png, id=878, 551.05875pt x 236.885pt>
+<Figures/pipebatch.png, id=884, 551.05875pt x 236.885pt>
 File: Figures/pipebatch.png Graphic file (type png)
 <use Figures/pipebatch.png>
-Package pdftex.def Info: Figures/pipebatch.png  used on input line 138.
+Package pdftex.def Info: Figures/pipebatch.png  used on input line 146.
 (pdftex.def)             Requested size: 343.42719pt x 147.63347pt.
-<Figures/nonpipesingle.png, id=879, 734.745pt x 150.5625pt>
+<Figures/nonpipesingle.png, id=885, 734.745pt x 150.5625pt>
 File: Figures/nonpipesingle.png Graphic file (type png)
 <use Figures/nonpipesingle.png>
-Package pdftex.def Info: Figures/nonpipesingle.png  used on input line 146.
+Package pdftex.def Info: Figures/nonpipesingle.png  used on input line 154.
 (pdftex.def)             Requested size: 343.42719pt x 70.37611pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/nonpipebatch.png, id=880, 910.40125pt x 186.6975pt>
+<Figures/nonpipebatch.png, id=886, 910.40125pt x 186.6975pt>
 File: Figures/nonpipebatch.png Graphic file (type png)
 <use Figures/nonpipebatch.png>
-Package pdftex.def Info: Figures/nonpipebatch.png  used on input line 154.
+Package pdftex.def Info: Figures/nonpipebatch.png  used on input line 162.
 (pdftex.def)             Requested size: 343.42719pt x 70.4273pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [37 <./Figures/pipesingle.png> <./Figures/pipebatch.png>]
-<Figures/fullprop.png, id=889, 1197.47375pt x 148.555pt>
+<Figures/fullprop.png, id=894, 1197.47375pt x 148.555pt>
 File: Figures/fullprop.png Graphic file (type png)
 <use Figures/fullprop.png>
-Package pdftex.def Info: Figures/fullprop.png  used on input line 171.
+Package pdftex.def Info: Figures/fullprop.png  used on input line 179.
 (pdftex.def)             Requested size: 404.02908pt x 50.12267pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 178.
+               Default added (so using `tbp') on input line 185.
 
 
-Overfull \hbox (188.14337pt too wide) in paragraph at lines 179--185
-[][]
- []
+Package caption Warning: \label without proper reference on input line 192.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:reconfigure' on page 38 undefined on input line 1
+97.
 
 [38 <./Figures/nonpipesingle.png> <./Figures/nonpipebatch.png> <./Figures/fullp
 rop.png>]
-Overfull \hbox (10.57864pt too wide) in paragraph at lines 202--203
-\T1/ppl/m/n/12 In this sec-tion we demon-strate a sim-ple neu-ral net-work ac-c
-el-er-a-tor and demon-
- []
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 219.
+
+
+Package caption Warning: \label without proper reference on input line 230.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:simplemod' on page 39 undefined on input line 234
+.
 
 [39]) [40]
 \openout2 = `Chapters/Chapter5.aux'.
@@ -2221,7 +2226,7 @@ el-er-a-tor and demon-
 Chapter 5.
 (./code/kernel.c)
 Overfull \hbox (23.14091pt too wide) in paragraph at lines 19--21
-\T1/ppl/m/n/12 In-tel's chan-nel API [[][]23[][]] func-tions like \T1/ppl/m/it/
+\T1/ppl/m/n/12 In-tel's chan-nel API [[][]24[][]] func-tions like \T1/ppl/m/it/
 12 read_channel_intel() \T1/ppl/m/n/12 and \T1/ppl/m/it/12 write_channel_intel(
 )
  []
@@ -2237,12 +2242,12 @@ Overfull \hbox (13.7103pt too wide) in paragraph at lines 26--27
 e-sult in pipeline
  []
 
-[42] [43] (./code/shiftreg.c) [44] (./code/loopa.c) (./code/loopb.c)
-Overfull \hbox (27.18488pt too wide) in paragraph at lines 48--60
+[42] (./code/shiftreg.c) [43] (./code/loopa.c) (./code/loopb.c)
+Overfull \hbox (27.18488pt too wide) in paragraph at lines 46--58
 []$[]$   $[]$ 
  []
 
-[45] [46] (./code/dep.c) (./code/nondep.c) [47] (./code/nondeptwo.c)) [48]
+[44] (./code/dep.c) (./code/nondep.c) [45] (./code/nondeptwo.c)) [46]
 \openout2 = `Chapters/Chapter6.aux'.
 
 
@@ -2250,11 +2255,11 @@ Overfull \hbox (27.18488pt too wide) in paragraph at lines 48--60
 Chapter 6.
 )
 1: section
-[49
+[47
 
 
 
-] [50
+] [48
 
 
 ]
@@ -2282,13 +2287,13 @@ orks^^Q. In: \T1/ppl/m/it/12 IEEE
  []
 
 1: section
-[51]
+[49] [50]
 Overfull \hbox (2.79713pt too wide) in paragraph at lines 274--274
 []\T1/ppl/m/n/12 Yann Le-Cun et al. ^^P  Gradient-based learn-ing ap-plied to d
 oc-u-ment recog-
  []
 
-[52]
+
 Overfull \hbox (23.94035pt too wide) in paragraph at lines 274--274
 []\T1/ppl/m/n/12 Eriko Nurvi-tadhi et al. ^^P  Can fp-gas beat gpus in ac-cel-e
 r-at-ing next-generation
@@ -2300,7 +2305,7 @@ Overfull \hbox (32.59691pt too wide) in paragraph at lines 274--274
 /it/12 arXiv preprint arXiv:1409.1556
  []
 
-[53]
+[51]
 Overfull \hbox (7.56868pt too wide) in paragraph at lines 274--274
 []\T1/ppl/m/n/12 Peter Wil-son. \T1/ppl/m/it/12 De-sign Recipes for FP-GAs: Us-
 ing Ver-ilog and VHDL\T1/ppl/m/n/12 . Newnes,
@@ -2319,7 +2324,7 @@ eed-ings of the 2018 ACM/SIGDA
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-[54]
+[52]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2327,20 +2332,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B3FE8D76231E17848A16DDA6F912DD98;10328.
+(rerunfilecheck)             Checksum: 4B4B7DEACE8CE7DD7B2134C5907A5020;10331.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38585 strings out of 492649
- 762095 string characters out of 6129622
- 1178184 words of memory out of 5000000
- 41594 multiletter control sequences out of 15000+600000
+ 38592 strings out of 492649
+ 762267 string characters out of 6129622
+ 1179169 words of memory out of 5000000
+ 41601 multiletter control sequences out of 15000+600000
  603542 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2991s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2357,10 +2365,10 @@ ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/p
 alatino/uplri8a.pfb>
-Output written on main.pdf (62 pages, 2662322 bytes).
+Output written on main.pdf (60 pages, 2663227 bytes).
 PDF statistics:
- 1228 PDF objects out of 1440 (max. 8388607)
- 1086 compressed objects within 11 object streams
+ 1235 PDF objects out of 1440 (max. 8388607)
+ 1095 compressed objects within 11 object streams
  379 named destinations out of 1000 (max. 500000)
  638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

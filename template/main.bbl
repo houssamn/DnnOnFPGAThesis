@@ -828,6 +828,45 @@
     \field{year}{2008}
   \endentry
 
+  \entry{gupta2015deep}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=GS}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Suyog},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Agrawal},
+         familyi={A\bibinitperiod},
+         given={Ankur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Gopalakrishnan},
+         familyi={G\bibinitperiod},
+         given={Kailash},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Narayanan},
+         familyi={N\bibinitperiod},
+         given={Pritish},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GS+1}
+    \strng{fullhash}{GSAAGKNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{1737\bibrangedash 1746}
+    \field{title}{Deep learning with limited numerical precision}
+    \field{year}{2015}
+  \endentry
+
   \entry{resnet}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=HK}{%
@@ -2220,7 +2259,6 @@
       {Monterey, California, USA}%
     }
     \field{year}{2015}
-    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{2018combined}{inproceedings}{}
