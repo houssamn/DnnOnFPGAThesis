@@ -13,13 +13,13 @@ for(int i =0; i < N; i++){
 
   #pragma unroll
   for(int j =0 ; j < X ; j++){
-    temp[j] = in[i*X + j];        // mem <- local array
+    temp[j] = in[i*X + j];        // local array <- mem
   }
 
   #pragma unroll
   for(int j =0 ; j < X ; j++){
-    temp_sum += temp[j]; // local array <- register
+    temp_sum += temp[j]; //  register <- local array
   }
 
-  out[i] = temp_sum; // register <- mem
+  out[i] = temp_sum; // mem <- register
 }

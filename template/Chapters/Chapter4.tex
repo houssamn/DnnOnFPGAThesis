@@ -25,7 +25,7 @@ Input/Output Channels & 1              \\ \hline
 \end{table}
 
 \subsection{Part I : Simple Example} \label{testone}
-In this section, we compare the different convolution implementations. Those are the simple implementation, sliding buffer, and row-stationary \ref{rowimpl}. The parameters are shown in table \ref{tab:partoneconfig}. 
+In this section, we compare the different convolution implementations. Those are the simple implementation, sliding buffer, and row-stationary \ref{rowimpl}. The parameters are shown in Table \ref{tab:partoneconfig}. 
 
 \begin{figure}[h]
 \centering
@@ -78,11 +78,11 @@ Batch Size         & 2048           \\ \hline
 \textit{Simple Convolution} & 5.37                    & 232.7                    & 85            & 4            \\ \hline
 \textit{Sliding Buffer}     & 3.53                    & 65.1                     & 116           & 51           \\ \hline
 \end{tabular}
-\label{tab:resultptwo}
 \caption{Simulation Results of Different Convolution Implementations }
+\label{tab:resultparttw}
 \end{table}
 
-The results are shown in table \ref{tab:resultptwo}. The sliding buffer is faster in practice, however it comes at the expense of more resources and a lower operating frequency. This may be feasible if we only implement the convolution operation, however in the context of a neural network, we chose the first implementation as we wish to fit more network layers in the same binary. The compiled version of the simple implementation differs from that in reference section as we have removed unrolling factors to lower the resource utilization even more. We have found that kernels with resource utilization >50\% take more than 12 hours to compile and we were unable to run the full compilations without timeouts, memory limits exceeded, and placement errors. 
+The results are shown in Table \ref{tab:resultparttw}. The sliding buffer is faster in practice, however it comes at the expense of more resources and a lower operating frequency. This may be feasible if we only implement the convolution operation, however in the context of a neural network, we chose the first implementation as we wish to fit more network layers in the same binary. The compiled version of the simple implementation differs from that in reference section as we have removed unrolling factors to lower the resource utilization even more. We have found that kernels with resource utilization >50\% take more than 12 hours to compile and we were unable to run the full compilations without timeouts, memory limits exceeded, and placement errors. 
 
 The results are fully pipelined for the batch of images and conform to the theoretical estimate for performance. As compute time for the convolution diminishes the effect of buffering kernel coefficients, we estimate the performance taking into consideration only the main computation loop. For the simple implementation, the calculation is as follows : \newline Number of cycles = batch size * input ch * output ch * img height * img width * filter height * filter width  = $2048 * 2 * 6 * 100 * 20 * 5 * 5 $ = 1,228,800,000 cycles. 
 
@@ -98,9 +98,9 @@ This theoretical calculation matches the experimental results. The same calculat
 %----------------------------------------------------------------------------------------
 \section{Pipelined vs. Non-Pipelined Inference}
 
-In this example we study the effect of pipelining on the inference phase of the neural network. We test both a pipelined implementation of LeNet \ref{lenetpilot} where kernels are connected by Intel OpenCL Channels and the kernels follow a sliding buffer / streamlined implementation. We also test a non-pipelined version shown in \ref{fig:comm}, where the operators are run sequentially, communicate through global memory, and exhibit different types of parallelism. The batch size is configurable at run-time, so we test the time it takes for the inference of a single image and the time for a batch of 2048 images. 
+In this example we study the effect of pipelining on the inference phase of the neural network. We test both a pipelined implementation of LeNet \ref{lenetpilot} where kernels are connected by Intel OpenCL Channels and the kernels follow a sliding buffer/streamlined implementation. We also test a non-pipelined version shown in \ref{fig:comm}, where the operators are run sequentially, communicate through global memory, and exhibit different types of parallelism. The batch size is configurable at run-time, so we test the time it takes for the inference of a single image and the time for a batch of 2048 images. 
 
-The results are that the pipelined version is effectively faster than the non-pipelined version during inference. The figure \ref{fig:pipesingle} shows the dynamic profiler results. We note that the kernels were enqueued into separate queues and also in reverse order in the host program. This is why it seems that the softmax kernel has been running the longest, but effectively it only runs after all of the layers have been completed. We noticed that running the kernels in the order that they are supposed to execute introduced latencies due to context switching and the overhead of enqueuing the tasks from the host-side, so this reverse order gives a more accurate representation of effective time taken for inference. 
+The results are that the pipelined version is effectively faster than the non-pipelined version during inference. Fig. \ref{fig:pipesingle} shows the dynamic profiler results. We note that the kernels were enqueued into separate queues and also in reverse order in the host program. This is why it seems that the softmax kernel has been running the longest, but effectively it only runs after all of the layers have been completed. We noticed that running the kernels in the order that they are supposed to execute introduced latencies due to context switching and the overhead of enqueuing the tasks from the host-side, so this reverse order gives a more accurate representation of effective time taken for inference. 
 
 The kernels communicate through channels so we are sure that they are synchronized and the results are verified for correctness by using a LeNet CPU implementation configured with the same weights. The kernel also \emph{effectively} starts running after the reader kernel starts (which is at 0.3 ms from the initial start time because it is the last to be launched and all other layers depend on its input). 
 
@@ -183,20 +183,21 @@ We implemented full minibatch backpropagation for the LeNet model. The problem w
 \end{figure}
 
 \begin{table}[]
+\centering
 \begin{tabular}{|c|c|c|c|}
 \hline
 \textbf{Batch Size} & \textbf{\begin{tabular}[c]{@{}c@{}}Total Epoch \\ Time\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Reconfiguration Time \\ (x2) in seconds\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$ \frac{Reconfiguration Time}{Total Epoch Time} $\end{tabular}} \\ \hline
 1                   & 4.3                                                                  & 4.2                                                                                      & 97.6 \%                                                                                     \\ \hline
 2048                & 49.1                                                                 & 4.6                                                                                      & 9.3\%                                                                                       \\ \hline
 \end{tabular}
+\caption{Reconfiguration Time Overhead}
 \label{tab:reconfigure}
-\caption{write some caption here}
 \end{table}
 
 
-By looking at the figure \ref{fig:fullprop} and after re-running the experiment time for multiple times, we realize that reconfiguration time is long and takes between 2 and 2.5 seconds in total. For a small batch size or in the case of a single image, reconfiguration time introduces a large overhead. When working with large batches, the effect is minimized ( as shown in table \ref{tab:reconfigure} ). One iteration in the table consists of kernel reconfiguration ( twice ), forward propagation, and backward propagation with weight updates for the full batch.
+By looking at Fig. \ref{fig:fullprop} and after re-running the experiment time for multiple times, we realize that reconfiguration time is long and takes between 2 and 2.5 seconds in total. For a small batch size or in the case of a single image, reconfiguration time introduces a large overhead. When working with large batches, the effect is minimized ( as shown in Table \ref{tab:reconfigure} ). One iteration in the table consists of kernel reconfiguration ( twice ), forward propagation, and backward propagation with weight updates for the full batch.
 
-In the case of a batch size of 2048, the overhead of reconfiguration is still large ( 9.7\%), however this is more feasible to perform as opposed to a single image. Nevertheless, with larger batch sizes, we risk reaching a local minimum when optimizing the loss function as discussed before in \ref{graddesc}.
+In the case of a batch size of 2048, the overhead of reconfiguration is still large (9.7\%), however this is more feasible to perform as opposed to a single image. Nevertheless, with larger batch sizes, we risk reaching a local minimum when optimizing the loss function as discussed before in \ref{graddesc}.
 
 \subsubsection{Challenges}
 
@@ -212,7 +213,9 @@ The implementation of LeNet required a lot of modifications until we started to 
  \end{equation}
  In back-propagating the error in the fully connected layers, we experimented with gradient clipping techniques which also improved the stability in the weight updates. 
 
-We ran the batch size of 2048 on the FPGA, however it took as long as  ~2 hours per epoch and we did not get an improvement in accuracy. This may be due either to the batch size being too large, or because of some error introduced into the minibatch backpropagation implementation for convolutional layers. As for simply running Stochastic Gradient Descent,  it is infeasible to run on the FPGA due to the overhead of reconfiguration which dominates runtime, we used the Intel Emulator and noticed a decrease in the loss function but we did not run it until convergance as the emulator crashes when too many threads are launched and destroyed. 
+We ran the batch size of 2048 on the FPGA, however it took as long as  ~2 hours per epoch and we did not get an improvement in accuracy. This may be due either to the batch size being too large, or because of some error introduced into the minibatch backpropagation implementation for convolutional layers. 
+
+As for simply running Stochastic Gradient Descent,  it is unfeasible to run on the FPGA due to the overhead of reconfiguration which dominates runtime. Therefore, to test SGD, we used the Intel Emulator and noticed a decrease in the loss function but we did not run it until convergence as the emulator crashes when too many threads are launched and destroyed. 
 
 \subsection{Simple Classifier}
 
@@ -227,11 +230,13 @@ We ran the batch size of 2048 on the FPGA, however it took as long as  ~2 hours 
 \textit{Fully Connected} & 10                      & 5130                          \\ \hline
 \textit{Softmax}         & 10                      & 0                             \\ \hline
 \end{tabular}
-\label{tab:simplemod}
 \caption{Number of Trainable Parameters per Layer in the Simple Classifier.}
+\label{tab:simplemod}
 \end{table}
 
-In this section, we compile a simple neural network composed of only fully connected layers. The number of neurons per layer is shown in table \ref{tab:simplemod}. We trained the model until convergence and unlike the LeNet model, both the full forward and backward propagation fit on the Arria 10 FPGA. 
-It achieved reasonable runtime, ~5.3 minutes per epoch and took 20 epochs to converge. We randomly sampled 5000 images of the MNIST Dataset for training and 500 images for testing. Eventually, the model achieved 67\% test error. In the simple model there is a \textbf{lot} of room to tune hyperparameters. Moreover, in this experiment, we did not aim to come up with the highest accuracy or fastest runtime.  The goal was to prove the correctness and the usability of the framework in which both forward and backward propagation fit on a single board configuration. Hopefully with a more advanced board, with a better fabric we can achieve better performance for more complex models.
+For additional verification, we compiled a simple neural network composed of only fully connected layers. The number of neurons per layer is shown in Table \ref{tab:simplemod}. We trained the model until convergence and unlike the LeNet model, both the full forward and backward propagation fit on the Arria 10 FPGA. 
+It achieved reasonable runtime, $\approx$5.3 minutes per epoch and took 20 epochs to converge. We randomly sampled 5000 images of the MNIST Dataset for training and 500 images for testing. Eventually, the model achieved 67\% test error. 
+
+In the simple model there is a \textbf{lot} of room to tune hyperparameters. Moreover, in this experiment, we did not aim to come up with the highest accuracy or fastest runtime.  The goal was to prove the correctness and the usability of the framework in a case where both forward and backward propagation fit on a single board configuration. Hopefully with a more advanced board, with a better fabric we can achieve better performance for more complex models.
 
 %----------------------------------------------------------------------------------------
